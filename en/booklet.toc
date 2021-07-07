@@ -1,0 +1,100 @@
+\contentsline {section}{The Spectrum of Sound}{5}{section*.3}%
+\contentsline {section}{Scale Lab}{9}{section*.8}%
+\contentsline {subsection}{The Tools}{9}{section*.10}%
+\contentsline {subsubsection}{Tuning}{10}{section*.11}%
+\contentsline {subsubsection}{Analyze}{10}{section*.12}%
+\contentsline {subsubsection}{Waveform}{10}{section*.13}%
+\contentsline {subsubsection}{Lissajous}{10}{section*.14}%
+\contentsline {subsubsection}{Ratio}{10}{section*.15}%
+\contentsline {subsubsection}{Dissonance curve}{10}{section*.16}%
+\contentsline {subsubsection}{Timbre}{11}{section*.17}%
+\contentsline {subsection}{Backgrounds and Experiments}{11}{section*.18}%
+\contentsline {subsubsection}{Beating}{11}{section*.19}%
+\contentsline {paragraph}{Experiment:}{12}{section*.21}%
+\contentsline {paragraph}{Music:}{12}{section*.22}%
+\contentsline {subsubsection}{Sound from Overtones}{12}{section*.23}%
+\contentsline {paragraph}{Experiment:}{12}{section*.25}%
+\contentsline {paragraph}{Music:}{13}{section*.26}%
+\contentsline {subsubsection}{Spread partials}{13}{section*.28}%
+\contentsline {paragraph}{Experiment:}{14}{section*.29}%
+\contentsline {subsubsection}{Dissonance curves}{14}{section*.30}%
+\contentsline {paragraph}{Experiment:}{15}{section*.34}%
+\contentsline {subsubsection}{Dissonance and spread partials}{16}{section*.35}%
+\contentsline {paragraph}{Experiment:}{17}{section*.38}%
+\contentsline {paragraph}{Music:}{17}{section*.39}%
+\contentsline {subsubsection}{Western Tuning Systems}{17}{section*.40}%
+\contentsline {paragraph}{Experiment:}{20}{section*.43}%
+\contentsline {subsubsection}{Indian Raga Scales}{20}{section*.45}%
+\contentsline {paragraph}{Experiment:}{22}{section*.50}%
+\contentsline {section}{Tonnetz}{23}{section*.51}%
+\contentsline {section}{Beat Box}{26}{section*.52}%
+\contentsline {subsection}{Fibonacci Rhythm / Hemachendra (Fibonacci) numbers and 2-1 rhythms}{26}{section*.53}%
+\contentsline {paragraph}{The Music:}{26}{section*.55}%
+\contentsline {paragraph}{The Math:}{27}{section*.56}%
+\contentsline {paragraph}{The Exhibit:}{27}{section*.57}%
+\contentsline {subsection}{Clapping / Steve Reich's Clapping Music}{27}{section*.58}%
+\contentsline {paragraph}{The Music:}{28}{section*.61}%
+\contentsline {paragraph}{The Math:}{28}{section*.62}%
+\contentsline {paragraph}{The Exhibit:}{28}{section*.64}%
+\contentsline {subsection}{Sequencer}{29}{section*.65}%
+\contentsline {paragraph}{The Exhibit:}{29}{section*.66}%
+\contentsline {subsection}{n over m Rhythms}{30}{section*.68}%
+\contentsline {paragraph}{The Math:}{30}{section*.69}%
+\contentsline {paragraph}{The Music:}{31}{section*.71}%
+\contentsline {paragraph}{The Exhibit:}{31}{section*.73}%
+\contentsline {subsection}{Grid Rhythms}{32}{section*.74}%
+\contentsline {paragraph}{The Music:}{32}{section*.75}%
+\contentsline {paragraph}{The Math:}{32}{section*.77}%
+\contentsline {paragraph}{The Exhibit:}{33}{section*.78}%
+\contentsline {subsection}{Euclidean Rhythm / Line Step Rhythms}{33}{section*.79}%
+\contentsline {paragraph}{The Math:}{33}{section*.81}%
+\contentsline {paragraph}{The Music:}{34}{section*.82}%
+\contentsline {paragraph}{The Exhibit:}{34}{section*.83}%
+\contentsline {section}{Graph Composer}{35}{section*.85}%
+\contentsline {section}{AI Jam}{37}{section*.89}%
+\contentsline {section}{Con Espressione!}{38}{section*.90}%
+\contentsline {section}{NSynth}{41}{section*.91}%
+\contentsline {paragraph}{Instrument selectors}{41}{section*.93}%
+\contentsline {paragraph}{Display}{42}{section*.94}%
+\contentsline {paragraph}{Envelope controls}{42}{section*.95}%
+\contentsline {paragraph}{Touch interface}{42}{section*.96}%
+\contentsline {section}{Lissajous-based exhibits}{44}{section*.97}%
+\contentsline {section}{Lissajous gallery}{45}{section*.98}%
+\contentsline {section}{The Harmonic Series}{46}{section*.100}%
+\contentsline {subsection}{Device \#1}{46}{section*.102}%
+\contentsline {subsection}{Device \#2}{47}{section*.103}%
+\contentsline {subsection}{Triad Sculptures}{47}{section*.104}%
+\contentsline {section}{Pink Trombone}{48}{section*.105}%
+\contentsline {section}{Mind and Music Jukebox}{51}{section*.107}%
+\contentsline {section}{Whitney Music Box}{52}{section*.108}%
+\contentsline {section}{Musical Bench}{54}{section*.110}%
+\contentsline {section}{Hands-on Table}{55}{section*.111}%
+\contentsline {section}{La La Cinema}{56}{section*.112}%
+\contentsline {section}{Silent area}{61}{section*.141}%
+\contentsline {section}{Note compass }{62}{section*.142}%
+\contentsline {section}{Show me music}{68}{section*.144}%
+\contentsline {subsection}{Spiral Tone Space}{68}{section*.146}%
+\contentsline {paragraph}{The Music:}{68}{section*.148}%
+\contentsline {paragraph}{The Maths:}{69}{section*.149}%
+\contentsline {paragraph}{The Exhibit:}{69}{section*.150}%
+\contentsline {subsection}{Space of Three-Note Chords}{69}{section*.151}%
+\contentsline {paragraph}{The Music:}{70}{section*.154}%
+\contentsline {paragraph}{The Math}{70}{section*.155}%
+\contentsline {paragraph}{The Exhibit:}{71}{section*.156}%
+\contentsline {subsection}{Pachelbels Canon in D and Pachelballs}{71}{section*.158}%
+\contentsline {paragraph}{The Math:}{71}{section*.159}%
+\contentsline {paragraph}{The Music:}{71}{section*.160}%
+\contentsline {paragraph}{The Exhibit:}{72}{section*.161}%
+\contentsline {subsection}{Mozart's Musical Dice Game}{72}{section*.163}%
+\contentsline {paragraph}{The Music:}{73}{section*.164}%
+\contentsline {paragraph}{The Math:}{73}{section*.165}%
+\contentsline {paragraph}{The Exhibit:}{74}{section*.167}%
+\contentsline {subsection}{Shepard Tone}{74}{section*.168}%
+\contentsline {paragraph}{The Music:}{75}{section*.171}%
+\contentsline {paragraph}{The Math:}{75}{section*.172}%
+\contentsline {paragraph}{The Exhibit:}{75}{section*.173}%
+\contentsline {section}{The Space of Pentatonic Scales}{76}{section*.174}%
+\contentsline {paragraph}{The Music:}{76}{section*.176}%
+\contentsline {paragraph}{The Math:}{77}{section*.177}%
+\contentsline {paragraph}{The Exhibit:}{77}{section*.178}%
+\contentsline {section}{The Sound of sequences}{78}{section*.180}%

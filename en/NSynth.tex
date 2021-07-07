@@ -1,0 +1,45 @@
+\section{NSynth}
+Can you mix and blend sounds? What is the morphed sound of a guitar and a piano? And that of a car engine sound and a flute? 
+
+A synthesizer is a device that generates sound, tuned so it can be used as an instrument. Classical analog synthesizers use oscillators and filters, while modern digital synthesizers can work with stored samples, but it is always necessary to describe the timbre with detailed parameters to adjust and tune the final sound. Traditionally, this is done manually by analyzing the sound of real instruments (spectrum, waveform), or by an expert that ``sculpts'' the waveform by hand. 
+
+Finding a sound ``in between'' two other sounds is not easy, since parameters are highly non-linear. If you take the average of the waveforms (or spectrum) of two instruments, mathematically this would mean adding them, all you obtain is the sound of the two instruments played at the same time, not a new instrument. What you would need instead is features that describe qualities of both instruments, such as how ``bright'', ``multi-phonic'', or ``percussive'' a sound is. Then, what you are looking for is a sound that has the average ``brightness'', ``multi-phonicity'' or ``percussiveness'' of your two original sounds.
+
+NSynth is a synthesizer that uses Artificial Intelligence to interpolate and mix sounds. A Deep Neural Network is trained with thousands of sample sounds to extract 16 features (dimensions) per each time-step of 32 ms (a total of 2000 parameters for samples of 4 seconds). With this process, each sound is encoded with these dimensions as parameters, and conversely these parameters allow to generate sounds. The correspondence is not perfect, the sound you can produce from certain parameters is not exactly the same as the original one, however the sounds are close enough and sound similar. Most importantly, you can now mix these parameters linearly with each other to generate new sounds which really average the qualities of the source sounds.
+
+The NSynth device on the exhibition contains the trained neural network and can interpolate between four selected sounds (using the four big knobs). By touching a point on the square touch sensor, the synthesizer adjusts the parameters to be proportional to the coordinates on the square. The four original sounds are associated with the corners, and all other points correspond to newly created sounds.
+
+
+\begin{figure}[h]
+\centering
+\includegraphics[width=0.7\textwidth]{NSynth_1}
+\end{figure}
+
+\paragraph{Instrument selectors} - These instruments are assigned to the corners of the touch interface. 
+
+\paragraph{Display} - Shows the state of the instrument and additional information about the controls that you are interacting with.
+
+\paragraph{Envelope controls} - Used to further customize the audio output by the device:
+\begin{itemize}
+\item ``Position'' sets the initial position of the wave, (cut out the attack of a waveform, or start from the tail).
+\item ``Attack'' controls the time taken for initial run-up of level from nil to peak.
+\item ``Decay'' controls the time taken for the subsequent run down from the attack level to the designated sustain level.
+\item ``Sustain'' sets the level during the main sequence of the sound's duration, until the key is released.
+\item ``Release'' controls the time taken for the level to decay from the sustain level to zero after the key is released.
+\item ``Volume'' adjusts the overall output volume of the device.
+\end{itemize}
+
+\paragraph{Touch interface} - This is a capacitive sensor, like the mouse pad on a laptop, which is used to explore the world of new sounds that NSynth has generated between your chosen source audio.
+
+\vfill
+
+Author of the exhibit: NSynth is an open-software synthesizer based on machine learning developed by Google's Magenta project. NSynth Super is an open-hardware interface developed by Google Creative Lab. Text: Daniel Ramos (IMAGINARY).
+
+References 
+
+NSynth: Neural Audio Synthesis. Website at Google's magenta project. \url{www.magenta.tensorflow.org/nsynth}.
+
+Jesse Engel, Cinjon Resnick, Adam Roberts, Sander Dieleman, Douglas Eck, Karen Simonyan, and Mohammad Norouzi. Neural Audio Synthesis of Musical Notes with WaveNet Autoencoders. \url{www.arxiv.org/abs/1704.01279}, (2017).
+
+NSynth Super: An experimental physical interface for the NSynth algorithm. Website at Google's Creative Lab. \url{www.nsynthsuper.withgoogle.com}.
+

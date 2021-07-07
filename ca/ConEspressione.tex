@@ -1,0 +1,38 @@
+\section{Con Espressione!}
+Una peça musical es pot descriure amb precisió matemàtica en una partitura, amb símbols perfectament definits per una teoria ben fundada. De totes maneres, la música és un art per sobre de tot, i com a tal transmet unes emocions, uns sentiments i unes sensacions humanes. Com és possible expressar aquests sentiments amb una notació tan estricta? Com pot un intèrpret fer que una peça cobri vida? Què hi ha entre la partitura i la interpretació d'una partitura?
+
+Un intèrpret no toca alhora totes les notes d'un acord ni tampoc segueix un tempo estricte. Algunes notes comencen uns milisegns abans, o duren uns mil·lisegons menys, algunes es toquen més fort, algunes apareixen més de pressa, etc. Totes aquestes variables permeten que els músics s'expressin i aportin una mica de sentiment i emoció a la seva actuació. Un músic no és una màquina que reprodueix perfectament la partitura, i totes aquestes ``imperfeccions'' o desviacions són el que fa que la música estigui viva, una cosa que les persones fan de forma natural, però les màquines mai poden reproduir... o sí?
+
+Aquest mòdul et permet explorar la diferència entre una reproducció mecànica d'una peça o una de més ``humana'' produïda per una Intel·ligència Artificial que s'ha entrenat per ser un músic. El visitant pren el rol de director, controlant el tempo i el volum de l'actuació del piano. Amb una càmera, la IA segueix el moviment de la mà del visitant. L'alçada determina el volum de la música i el moviment cap a la dreta o l'esquerra n'adapta el tempo. Inicialment, això s'aconsegueix adaptant directament el volum i el tempo de la peça en general segons la posició de la mà, però fins i tot quan la màquina t'obeeix per assignar aquests valors, la música sona automàtica i sense ànima. Això és degut al fet que, amb els moviments de la mà, només pots controlar el tempo i el volum generals, però no els detalls fins d'una actuació (com la interpretació de notes concretes, o com emfatitzar la línia de la melodia)
+
+El mòdul compta amb un botó lliscant que activa la Intel·ligència Artificial. Com més alt és el valor, més llibertat té la màquina per triar les petites desviacions que farà respecte dels paràmetres establerts. La màquina ajusta el tempo i el volum per fer-los lleugerament diferents del que tu li manes, per fer la música més viva i menys ``mecànica''. També introdueix canvis a l'articulació de les notes, microtemps, i la dispersió dinàmica.
+
+\begin{itemize}
+\item El volum, per exemple, la quantitat d'amplificació del so de cada nota. Augmentar el volum és la manera més òbvia d'emfatitzar una nota.
+
+\item La dispersió dinàmica fa referència a les diferències de volum entre notes que es toquen simultàniament, com ara en un acord. Això és important per fer que la línia de la melodia ressalti i per canviar el ``so'' general de l'acord.
+
+\item El tempo es defineix com el ritme al que els esdeveniments musicals i les pulsacions es toquen. Els intèrprets canvien contínuament el tempo, accelerant o frenant, per expressar els ``alts i baixos'' de la música. Això és el que fa que la música ens soni natural (i segurament no ens adonem de totes aquestes fluctuacions de tempo)
+
+\item El microtemps es refereix al moment en què una nota es toca respecte del seu suposat començament. Per exemple, si un acord consisteix de diverses notes que s'han de tocar suposadament alhora, pot ser que una comenci a sonar abans que una altra per uns mil·lisegons, fent que no totes sonin perfectament sincronitzades. Això és inevitable a les actuacions de la vida real, i fa que la peça soni més càlida, expressiva i, sobretot, humana.
+
+
+\item L'articulació es refereix a la duració de la nota respecte de la duració que hauria de tenir segons la partitura. Les notes poden fer-se més llargues o més curtes del que el compositor va escriure a la partitura, poden tocar-se lligades o separar-les, ajudant a crear èmfasi o dissimular algunes notes respecte les altres. En llenguatge musical, això es descriu amb els termes legato i stacatto.
+\end{itemize}
+
+Cada intèrpret té la seva pròpia experiència i enteniment d'una peça, com també la seva intenció expressiva, i comunicar això en una actuació requereix control sobre els paràmetres musicals a molts nivells. Des de control precís de detalls com l'articulació o microtemps fins a detalls del tempo i forma de les dinàmiques. El programa darrere aquest mòdul s'ha entrenat amb centenars d'actuacions reals de peces musicals per analitzar i aprendre com es poden utilitzar aquests paràmetres en interpretacions fetes per pianistes reals. Els resultats experimentals mostren que els ordinadors ja són molt bons aprenent els detalls i les decisions de baix nivell, però encara tenen problemes entenent els conflictes de més gran escala i l'estructura dramàtica de la música, amb el nivell de forma i estil que això comporta. Per això, aquest mòdul explora i demostra un compromís: tu controles el tempo i el volum generals, a un nivell més alt i basat en el teu enteniment de la música, i l'ordinador aporta els seus propis detalls i variacions. D'aquesta manera, l'actuació resultant és el producte d'una cooperació real entre una persona i un ordinador (IA).
+
+\vfill
+
+Autors del mòdul: Gerhard Widmer, Florian Henkel, Carlos Eduardo Cancino Chacón, Stefan Balke (Institute of Computational Perception, Johannes Kepler University Linz, Austria, Austrian Research Institute for Artificial Intelligence (OFAI), Vienna, Austria), i Christian Stussak, Eric LONDAITS (IMAGINARY).
+Text: Daniel Ramos (IMAGINARY).
+
+Reconeixements: Aquest projecte ha rebut finançament de l'European Research Council (ERC) sota el programa de recerca i innovació Horizon 2020 (amb el número d'acord de concessió 670035)
+
+Referències:
+
+Gerhard Widmer (2017). Getting Closer to the Essence of Music: The Con Espressione Manifesto. ACM Transactions on Intelligent Systems and Technology (TIST) 8 (2), 19. \url{www.arxiv.org/pdf/1611.09733.pdf}
+
+Carlos Eduardo Cancino-Chacón (2018). Computational Modeling of Expressive Music Performance with Linear and Non-linear Basis Function Models. PhD Thesis, Johannes Kepler University Linz (JKU). \url{www.cp.jku.at/research/papers/Cancino_Dissertation_2018.pdf}
+
+Carlos E. Cancino-Chacón, Maarten Grachten, Werner Goebl and Gerhard Widmer (2018). Computational Models of Expressive Music Performance: A Comprehensive and Critical Review. Frontiers in Digital Humanities 5, Oct. 2018. \url{www.frontiersin.org/articles/10.3389/fdigh.2018.00025/full}

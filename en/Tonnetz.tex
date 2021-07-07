@@ -1,0 +1,52 @@
+\section{Tonnetz}
+
+The musical scale we use in Western music tradition is a choice of tones, that is, a selection of frequencies that we use to tune an instrument to make music.
+
+How do we name the notes? How do we represent these notes graphically? Which notation do we use to describe them on a score or to build an instrument? The first obvious choice would be to order them by pitch and name them sequentially. However, this doesn't reflect their relationships or their respective roles in musical language.
+
+By playing together a first note and a second one with double the frequency (ratio 1:2), the result is so consonant and the two tones mix together so well that we have the impression that they are the ``same'' note. In fact we even call them by the same name. In this case, the interval between two such notes is called an ``octave''. In modern tuning (the equal tempered system of the piano), an octave is divided into 12 equal parts and these equal parts correspond to the 12 notes of the chromatic scale.
+
+But we don't use all these 12 notes equally, some are used more often, at least historically, when the notation was developed in the Middle Age. This is why we have the ``main'' notes in a scale representing the white keys of the piano (C, D, E, F, G, A, B), called the diatonic scale, and ``secondary'' notes that we describe as alterations of a main note with flat and sharp (such as $C\sharp$ or $E\flat$) are represented by the black keys.
+
+Thus there are seven main notes in an octave, and the eighth has the same name as the first one (hence the term octave).
+
+Ordering the notes by pitch, like in the piano keyboard, may be reasonable; but it does not reflect all the relationships between notes. 
+
+Because of the octave relation, it makes sense to represent notes in a circle, the so called Chromatic circle. The notes are
+
+C, C\#, D, D\#, E, F, F\#, G, G\#, A, A\#, B
+
+and after the last note of the scale (B), the first note (C) follows. In modern tuning, the intervals are all equal (called semitone) and sharp and flat coincide as in $C\sharp = D\flat$. This relation is called the enharmonic identification. 
+
+Another fundamental relation is the Fifth (or more precisely the perfect Fifth). This is the interval between C and G or between F and C, and it corresponds to adding 7 semitones to an initial note. It is called a fifth because in the 7 notes scale, if C is the first note, G is the fifth one. After the octave, it is considered as the most consonant interval, as one can experience by playing the two notes together. Thus, it makes sense to have them close as in the Circle of fifths, which is built by listing the notes in steps of 7 semitones: 
+
+C, G, D, A, E, B, Gb, Db, Ab, Eb, Bb, F
+
+Same as before, the F is followed by the C.
+
+This representation is very useful to musicians because the notes that match well are closer together. This also explains why the white keys of the piano, represented by the  notes A,B,C,D,E,F,G, are the ``main'' ones (with respect to the ``secondary'' ones): if you start at F, you can repeat the fifth interval six times and this will give you a chain of seven notes corresponding precisely to the diatonic scale. The note ``C'' is the first one in Latin notation (Do, Re, Mi, Fa, Sol, La, Si), in what is called the ``major mode'', but if you start the scale in A, like in the English notation, you obtain the ``minor mode''.
+
+Two other very consonant relations are the Major Third (adding 4 semitones) and the Minor Third (adding 3 semitones). For instance between C and E there is a Major Third (E is the 3rd note on the scale). Between C and Eb, or between D and F there is a Minor Third (they are only 3 semitones apart).
+
+When notes are played together, we obtain what is called a chord. The most common chords are triads (when 3 notes are played together) and the basic recipe to build a Major chord is to pick one note x (tonic) then add its Major Third and Fifth. This gives you three notes (x, x+4, x+7) that sound very pleasant and bright. For instance C - E - G is the C-Major chord. Analogously, Minor chords are created by the tonic x then adding its Minor third and Fifth, to obtain (x, x+3, x+7), that sound more sad and dark. For instance, C - Eb - G is the C-Minor chord.
+
+There is a graphical representation of notes that reflects some of these relations. It goes back to mathematician Leonhard Euler, and it is known today as the Tonnetz (German for "network of tones"). The classical tonnetz (labeled here as 3,4,5) consists of a triangular grid where each vertex is associated to a note (up to an octave). There are three lines or directions in the triangular grid. In one direction notes are rising in fifths, in another in major thirds and in the final one in minor thirds. This is possible because raising 7 semitones in one direction corresponds to raising 4 semitones and 3 semitones in the two other edges of each triangle. The three notes form a triangle in the Chromatic circle with arc-sides 3, 4 and 5, which is the label we use for this tonnetz.
+
+With this diagram, all pairs of notes separated by a fifth, major third or minor third are adjacent. Furthermore, all major and minor chords are represented as the triangular faces of this diagram. 
+
+There are other types of triads, depending on the intervals between their notes. For instance Augmented chords are (x, x+4, x+8), which form a triangle with sides 4,4,4 in the chromatic circle (or in the fifth circle). We can build a tonnetz that represents these chords using these intervals as increasing steps in each direction. Any three numbers a,b,c, that add up to 12 represent a triangle on the chromatic circle and can be represented in a tonnetz. Using combinatorics, there are 12 possible ways of choosing 3 numbers a,b,c between 1 and 12, so that a+b+c=12. These are the 12 possible tonnetze.
+
+On the diagram we can also see the dual graphs of the tonnetz. A dual graph is built by replacing each face by a vertex, each vertex by a face, and connected vertices by adjacent faces. This diagram has the same information as the original one, but now each triad is a vertex of an hexagonal tiling and each note is a face (an hexagon).
+
+The tonnetz representation contains a lot of musical information. For instance, adjacent triangles represent triads that have two tones in common, and thus it is a natural chord progression in composition to go from one to another.
+
+Finally, these graphical representations can be used to transform a piece. The most basic transformation is pitch shifting, just adding a fixed amount of semitones to all notes in a music piece. This is usual to adapt a piece for a singer's range of voice. Geometrically it corresponds to a translation in the piano, but the white-black keys do not match. Better it is to consider a rotation on the chromatic circle, then all the notes are just rotated, or a translation in the tonnetz.
+
+An example of such a transformation would be a rotation on the Circle of fifths. That is just jumping 7 semitones at once (since a fifth is equal to 7 semitones). Again, if we have the piece represented on a tonnetz, that corresponds to a translation of the net in any of the directions.
+
+A more interesting transformation is a rotation of the tonnetz. Consider one piece represented in the tonnetz. Fix one note (for instance the first note on the piece), and then switch all the rest of the notes by their counterpart after rotating 180 degrees on the tonnetz. This transformation is called a ``negative harmony'' and transforms every major chord into minor chords and vice-versa. You can hear an example on the exhibit, by selecting the classical 3,4,5 tonnetz.
+
+\vfill
+
+Authors of this exhibit: Moreno Andreatta and Corentin Guichaoua (SMIR Project). Supported by CNRS/IRCAM/Sorbonne University, USIAS (University of Strasbourg Institute for Advanced Study), IRMA/University of Strasbourg. Adapted by Philipp Legner. Text: Daniel Ramos (IMAGINARY)
+

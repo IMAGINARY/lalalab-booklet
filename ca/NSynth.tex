@@ -1,0 +1,44 @@
+\section{NSynth}
+Pots mesclar i barrejar sons? Quin és el resultat de barrejar el so d'una guitarra i d'un piano? I el de barrejar el so d'un motor de cotxe amb el d'una flauta?
+
+Un sintetitzador és un dispositiu que genera sons de manera que es pot utilitzar com a instrument. Els sintetitzadors analògics clàssics utilitzen oscil·ladors i filtres, els sintetitzadors digitals moderns funcionen amb mostres emmagatzemades. De tota manera, en tots dos casos, cal descriure el timbre amb precisió mitjançant l'ajustament fi de paràmetres per obtenir el so final que desitgem. Tradicionalment, això es feia manualment amb l'anàlisi del so d'instruments reals (l'espectre i la forma d'ona), o un expert ``esculpia'' la forma d'ona a mà.
+
+Trobar un so ``a mig camí'' entre dos altres sons no és fàcil, ja que els paràmetres són altament no lineals. Si agafes la mitjana de dues formes d'ona (o espectres) de dos instruments, matemàticament això significaria fer-ne la suma, tot el que en trauries seria el so dels dos instruments tocats alhora, no un nou instrument. En comptes d'això, el que realment cal són característiques que defineixen el so dels dos instruments, com ara com de ``brillant'' és, la seva  ``multifonia'' o ``percussivitat''. Llavors, el que realment busques és un sò que sigui la mitjana de ``brillant'' i amb la mitjana de ``multifonia'' o ``percussivitat'' dels dos sons originals.
+
+El NSynth és un sintetitzador que utilitza Intel·ligència Artificial per interpolar i barrejar sons. Una Xarxa Neural Profunda (Deep Neural Network) es va entrenar amb milers de mostres de sons per extreure'n les 16 característiques (dimensions) per cada pas de 32 ms (un total de 2000 paràmetres per les mostres de 4 segons). Amb aquest procés, cada so es codifica amb aquestes dimensions com a paràmetres i, fent el procés a la inversa, aquests paràmetres també ens permetrien crear sons. La correspondència no és perfecta, el so que pots fer amb certs paràmetres no és exactament el mateix que l'original, però sona extremadament proper i molt similar. I, el que és més important, ara pots barrejar aquests paràmetres de forma lineal els uns amb els altres per generar nous sons que tinguin realment la mitjana de les qualitats dels sons originals.
+
+El dispositiu NSynth de l'exposició conté la Xarxa Neural entrenada i pot interpolar quatre sons seleccionats (utilitzant les quatre rodetes que incorpora). Tocant un punt al sensor tàctil quadrat, el sintetitzador ajusta els paràmetres per fer-los proporcionals a les coordenades del quadrat.  Els quatre sons originals s'associen a les cantonades, tota la resta de punts corresponen a sons nous.
+
+\begin{figure}[h]
+\centering
+\includegraphics[width=0.7\textwidth]{NSynth_1}
+\end{figure}
+
+\paragraph{Selectors d'instrument} - Aquests instruments s'assignen a les cantonades de la interfície tàctil.
+
+\paragraph{Pantalla} - Mostra l'estat de l'instrument i altra informació addicional sobre els controls amb què estàs interactuant.
+
+\paragraph{Controls d'envolupant} - S'utilitzen per personalitzar encara més la sortida que genera el dispositiu.
+\begin{itemize}
+\item ``Posició'' fixa la posició inicial de l'ona. (Talla l'atac de la forma d'ona o comença des de la cua).
+\item ``Atac'' controla el temps que triga la pujada inicial des de zero fins al pic.
+\item ``Caiguda'' controla el temps que triga la baixada des del pic de l'atac fins al nivell que es desitja mantenir.
+\item ``Sustent'' ajusta el nivell que tindrà la seqüència principal del so fins que la tecla es deixi anar.
+\item ``Alliberament'' controla el temps que triga el nivell fins a tornar a 0 després que es deixi anar la tecla.
+\item ``Volum''  ajusta el volum general de la sortida del dispositiu.
+\end{itemize}
+
+\paragraph{Interfície tàctil} - És un sensor capacitiu, com el panell tàctic que simula el ratolí en un ordinador portàtil, i s'utilitza per explorar el món de nous sons que el NSynth ha generat entre els sons font que has seleccionat.
+
+\vfill
+
+Autor del mòdul: NSynth és un sintetitzador de codi obert basat en Machine Learning desenvolupat pel projecte Googe Magenta. NSynth Super és una interfície de hardware obert desenvolupada pel Google Creative Lab.
+Text: Daniel Ramos (IMAGINARY).
+
+Referències
+
+NSynth: Neural Audio Synthesis. Website at Google's magenta project. \url{www.magenta.tensorflow.org/nsynth}.
+
+Jesse Engel, Cinjon Resnick, Adam Roberts, Sander Dieleman, Douglas Eck, Karen Simonyan, and Mohammad Norouzi. Neural Audio Synthesis of Musical Notes with WaveNet Autoencoders. \url{www.arxiv.org/abs/1704.01279}, (2017).
+
+NSynth Super: An experimental physical interface for the NSynth algorithm. Website at Google's Creative Lab. \url{www.nsynthsuper.withgoogle.com}.

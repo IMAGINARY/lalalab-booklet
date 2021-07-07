@@ -1,0 +1,44 @@
+\section{Pink Trombone}
+Voice is the oldest and most complex musical instrument. The human voice organs are unique amongst all the animals and allow us to communicate and express ideas and feelings through sophisticated sounds that we can create and control instinctively.
+
+As an instrument, voice is extremely rich and complex. Some sound characteristics are fixed and particular of each individual, while others can be changed to produce sounds that we can recognize as letters and words. Singing requires the sound to be not only recognizable, but exactly the one intended for the particular piece of music, which demands much more practice and skill. The film station shows a video of the cross section of a singer taken with an MRI (magnetic resonance imaging) machine while singing.
+
+Here we present an interactive simplified model that allows to replicate with certain fidelity the human voice. This model consist of two components: sound production and sound articulation.
+
+The sound is produced in the glottis (throat). This organ has some membranes or vocal folds that we can make vibrate and produce sound when we expel air. With the tension we put on this muscle (vocal cords) and the pressure of the air we expel we can control the pitch of the sound and also the intensity, from a whisper to a shout. Using these parameters the model generates an initial wave form.
+
+The sound wave coming from the glottis enters the vocal tract, where we articulate the sound. Articulation is to modify the voice sound to make a particular speech sound (or phone), that is, the sounds of letters that we use to speak. We can think of a simplified vocal tract as a tube, where the sound wave travels at certain speed (the speed of sound) only in one dimension (forward or backwards). If the tube were completely smooth and uniform, the wave would travel forward uninterrupted until the lips. However, the tube is not smooth nor uniform, and the sound wave bounces back and forth. The main characteristic of the tract is the diameter of the cross section at each point, that we can change with the position of the tongue and lips. Changes in the diameter of the tube make the wave bounce. In this model, the voice tract is a tube of 17 cm divided into 44 sections, each one with a constant diameter.
+
+\begin{figure}[h]
+\centering
+\includegraphics[width=0.4\textwidth]{PinkTrombone_4}
+\end{figure}
+
+The difficulty of propagating a wave through a tube is measured by its impedance $Z$, which is inversely proportional to its area. When the wave passes from a section tube of impedance $Z_i$ to one of $Z_{i+1}$, the reflection coefficient is
+$$r=\frac{Z_i - Z_{i+1}}{Z_i + Z_{i+1}}$$
+and a fraction $r$ of the wave intensity is reflected backwards, and $(1-r)$ is transmitted forward. The model keeps track of two waves, one moving forward and another moving backwards. By computing the wave intensity (air pressure) at each section at each time step (the time-step is the time required to travel one section of the tube at the speed of sound), we can work out the pressure wave coming from the `lips', which is the sound we hear. The model is improved by including a second tube (the nose), that attaches to the main tube (mouth) at the palatal velum.
+
+On the screen, the voicebox control allows you to choose the pitch (horizontally) and loudness (vertically) of the sound produced at the glottis. 
+
+Clicking on the tongue control, oral cavity, and nasal cavity allows you to modify the vocal tract. The crossing lines represent the diameter of the tract at each section.
+
+\vfill
+
+Author of the exhibit: Neil Thapen (Institute of Mathematics / Academy of Sciences of the Czech Republic), Adaptations by Eric Londaits (IMAGINARY). Text: Daniel Ramos (IMAGINARY).
+
+
+References
+
+Julius O. Smith III, Physical audio signal processing for virtual musical instruments and audio effects. \url{www.ccrma.stanford.edu/~jos/pasp/}
+
+Story, Brad H. A parametric model of the vocal tract area function for vowel and consonant simulation. The Journal of the Acoustical Society of America 117.5 (2005): 3231-3254.
+
+Lu, Hui-Ling, and J. O. Smith. Glottal source modeling for singing voice synthesis. Proceedings of the 2000 International Computer Music Conference. 2000.
+
+Mullen, Jack. Physical modelling of the vocal tract with the 2D digital waveguide mesh. PhD thesis, University of York, 2006.
+
+John Coleman. Acoustics of Tube Models (2): Kelly and Lochbaum method. \url{www.phon.ox.ac.uk/jcoleman/kelly-lochbaum.htm}
+
+Bernard Richter, Matthias Echternach, Louisa Traser, Michael Burdumy, Claudia Spahn. The voice: Insights into the Physiology of Singing and Speaking. DVD-ROM, Helbling eds. 2017.
+
+Pink trombone: \url{www.dood.al/pinktrombone}

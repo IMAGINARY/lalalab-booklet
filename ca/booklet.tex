@@ -1,0 +1,126 @@
+\documentclass{lalabook}
+\usepackage[utf8]{inputenc}
+\usepackage{geometry}
+\geometry{a5paper}
+\usepackage[hidelinks]{hyperref}
+
+\usepackage{epigraph}
+\setlength\epigraphwidth{.95\textwidth}
+\setlength\epigraphrule{0pt}
+\renewcommand{\textflush}{flushright}
+
+\usepackage{graphicx}
+\graphicspath{ {../images/} }
+\usepackage{wrapfig}
+\usepackage[font=scriptsize]{caption}
+\usepackage{subcaption}
+
+\usepackage{xcolor}
+\usepackage{normalcolor}
+
+
+
+\usepackage{tikz}
+
+ \usepackage{fontspec}
+ \setmainfont{Quicksand}
+
+\usepackage{fancyhdr}
+
+\pagestyle{fancy}
+\fancyhf{}
+\fancyhead[LE,RO]{\bfseries \small \rightmark}
+\fancyfoot[LE,RO]{\bfseries \large \thepage}
+\renewcommand{\headrulewidth}{0pt}
+
+
+\usepackage{tocloft}
+\renewcommand{\cftdot}{}
+
+\renewcommand\cfttoctitlefont{\bfseries \Large}
+\renewcommand\cftsecfont{\large}
+\renewcommand\cftsecpagefont{\large}
+
+\setlength\cftparskip{3pt}
+\setlength\cftbeforetoctitleskip{-3em}
+\setlength\cftaftertoctitleskip{1em}
+\setlength\cftsecindent{0pt}
+\renewcommand\cftsecafterpnum{\hspace*{8em}}
+
+%If using babel: put the next command inside the braces of
+%\addto\captionsenglish{  }
+%substituting "english" by the language set in babel
+\renewcommand*\contentsname{Índex de mòduls:} 
+
+\setcounter{tocdepth}{1} % Show only sections
+
+\begin{document}
+
+\thispagestyle{empty}
+\noindent
+\begin{tikzpicture}[remember picture, overlay]
+ 	\node[inner sep=0pt] at (current page.center) {\includegraphics[width=\paperwidth,height=\paperheight]{cover_blank}};
+	\node at (12.2,1.8) [anchor=east] {\color[rgb]{1,1,1} \Large \textbf{GUIA DE L'EXPOSICIÓ} };
+	\node at (4.2,-10.6) [anchor=west] { \Huge \bf LES MATEMÀTIQUES};
+	\node at (4.2,-11.6) [anchor=west] {\Huge \bf DE LA MÚSICA};
+\end{tikzpicture}
+
+
+\newpage
+
+\input{Foreword}
+
+\input{SpectrumOfSound}
+\input{ScaleLab}
+\input{Tonnetz}
+\input{BeatBox}
+\input{GraphComposer}
+\input{AIJam}
+\input{ConEspressione}
+\input{NSynth}
+\input{Lissajous}
+\input{PinkTrombone}
+\input{MindAndMusicJukebox}
+\input{WhitneyMusicBox}
+\input{MusicalBench}
+\input{HandsOnTable}
+\input{LaLaCinema}
+\input{SilentArea}
+\input{NoteCompass}
+\input{ShowMeMusic}
+\input{PentatonicScales}
+\input{SoundOfSequences}
+
+\newpage
+\pagecolor[RGB]{239,7,115}
+\color{white}\resetnormalcolor
+\vspace{-5cm}
+\tableofcontents
+\thispagestyle{empty}
+
+\vspace{3em}
+\urlstyle{same}
+\noindent \textbf{ \large \url{ lalalab.imaginary.org}}
+
+%\color{black}\resetnormalcolor
+
+\vfill
+
+
+\noindent\begin{tikzpicture}[remember picture, overlay]
+\node[yshift=27mm, minimum width=73.5mm, minimum height=26mm, inner sep=0pt, fill=white, anchor=south west] at (current page.south west)  
+	{\includegraphics[height=20mm]{logo-imaginary-magenta}};
+	
+\node[minimum width=73.5mm, minimum height=26mm, inner sep=0pt, fill=white, anchor=south west] at (current page.south west)  
+	{\includegraphics[height=19mm]{logo-kts-magenta}};
+	
+\node[yshift=27mm, minimum width=73.5mm, minimum height=26mm, inner sep=0pt, fill=white, anchor=south east] at (current page.south east)  
+	{\includegraphics[height=17mm]{logo-hlff-magenta}};
+	
+\node[minimum width=73.5mm, minimum height=26mm, inner sep=0pt, fill=white, anchor=south east] at (current page.south east)  
+	{\includegraphics[height=14mm]{logo-tum-magenta}};
+
+\end{tikzpicture}
+
+
+\end{document}

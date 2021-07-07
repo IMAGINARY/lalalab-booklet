@@ -1,0 +1,14 @@
+\section{AI Jam}
+Les màquines poden generar i reproduir música, però com de bones són fent música amb persones? Podrien formar part d'una Jam Session?
+Podríem arribar a substituir un músic amb una intel·ligència artificial en un assaig d'un grup?
+
+Fins i tot obviant les qüestions de qualitat musical, hi ha molts problemes que poden sorgir quan intentem compondre música fent servir Machine Learning. Un d'aquests pot ser la generació d'una melodia. Normalment les persones són bones fent estructures llargues, però els algorismes de Machine Learning no ho són. Per aquest motiu la música pot sonar bé mirada nota per nota, però pot sonar aleatòria i sense objectiu després d'alguns compassos. El mòdul AI Jam ataca aquesta problemàtica entrenant explícitament la seva Xarxa Neural Recurrent \footnote{\url{www.en.wikipedia.org/wiki/Recurrent_neural_network}} (XNR) per fer estructures musicals. Quan s'alimenta la Xarxa amb milers de peces musicals, l'entrada està especialment etiquetada sempre que un compàs en repeteix un d'immediatament anterior, o el següent. Els seus desenvolupadors, l'equip Google Magenta, van anomenar aquestes xarxes XNR Lookback \footnote{\url{www.magenta.tensorflow.org/2016/07/15/lookback-rnn-attention-rnn}}
+
+Una segona tècnica que s'utilitza és l'atenció. En aquest cas, sempre que la XNR produeix alguna cosa, mira les n produccions anteriors (essent aquesta n configurable), les pondera amb una màscara d'atenció i en suma el resultat. D'aquest pas en resulta bàsicament la combinació de les passades produccions, però tenint cadascuna un pes determinat i diferent. Això també es combina amb la producció actual. D'aquesta manera, cada pas produeix una sortida relacionada amb les anteriors.
+
+Amb l'ús dels dos mecanismes, l'algorisme no només pot produir petits fragments de notes que sonen bé de forma aïllada, sinó que també poden formar una melodia que soni bé després d'un fragment tocat per un humà.
+
+\vfill
+
+Autor del mòdul: Sebastian Uribe (Idea del mòdul i gestió del projecte), Eric Londaits (Desenvolupament de Software), Christian Stussak (Desenvolupament de software addicional i configuració de SO), and Daniel Weiss (Disseny i construcció del panell) per IMAGINARY.
+Software original en què s'ha basat el projecte: Yotam Mann, els equips Magenta i Creative Lab de Google.

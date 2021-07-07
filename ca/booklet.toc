@@ -1,0 +1,100 @@
+\contentsline {section}{The Spectrum of Sound}{5}{section*.3}%
+\contentsline {section}{Scale Lab}{9}{section*.8}%
+\contentsline {subsection}{Les eines}{9}{section*.10}%
+\contentsline {subsubsection}{Afinació}{10}{section*.11}%
+\contentsline {subsubsection}{Anàlisi}{10}{section*.12}%
+\contentsline {subsubsection}{Forma d'ona}{10}{section*.13}%
+\contentsline {subsubsection}{Lissajous}{10}{section*.14}%
+\contentsline {subsubsection}{Proporció}{10}{section*.15}%
+\contentsline {subsubsection}{Corba de dissonància}{10}{section*.16}%
+\contentsline {subsubsection}{Timbre}{11}{section*.17}%
+\contentsline {subsection}{Rerefons i Experiments}{11}{section*.18}%
+\contentsline {subsubsection}{Batec}{11}{section*.19}%
+\contentsline {paragraph}{Experiment:}{12}{section*.21}%
+\contentsline {paragraph}{Música:}{12}{section*.22}%
+\contentsline {subsubsection}{So desde Harmònics}{12}{section*.23}%
+\contentsline {paragraph}{Experiment:}{12}{section*.25}%
+\contentsline {paragraph}{Music:}{13}{section*.26}%
+\contentsline {subsubsection}{Parcials dispersos}{13}{section*.28}%
+\contentsline {paragraph}{Experiment:}{14}{section*.29}%
+\contentsline {subsubsection}{Corbes de Dissonància}{14}{section*.30}%
+\contentsline {paragraph}{Experiment:}{16}{section*.34}%
+\contentsline {subsubsection}{Dissonància i Parcials Dispersos}{16}{section*.35}%
+\contentsline {paragraph}{Experiment:}{17}{section*.38}%
+\contentsline {paragraph}{Music:}{17}{section*.39}%
+\contentsline {subsubsection}{Sistemes d'Afinació Occidentals}{17}{section*.40}%
+\contentsline {paragraph}{Experiment:}{20}{section*.43}%
+\contentsline {subsubsection}{Escales Raga Índies}{20}{section*.45}%
+\contentsline {paragraph}{Experiment:}{22}{section*.50}%
+\contentsline {section}{Tonnetz}{23}{section*.51}%
+\contentsline {section}{Beat Box}{27}{section*.52}%
+\contentsline {subsection}{El Ritme de Fibonacci / Els nombres d'Hemachendra (Fibonacci) i els ritmes 2-1}{27}{section*.53}%
+\contentsline {paragraph}{La Música:}{27}{section*.55}%
+\contentsline {paragraph}{Les Mates:}{28}{section*.56}%
+\contentsline {paragraph}{El Mòdul:}{28}{section*.57}%
+\contentsline {subsection}{Aplaudiments / La música d'aplaudiments de Steve Reich}{28}{section*.58}%
+\contentsline {paragraph}{La Música:}{29}{section*.61}%
+\contentsline {paragraph}{Les Mates:}{29}{section*.62}%
+\contentsline {paragraph}{El Mòdul:}{30}{section*.64}%
+\contentsline {subsection}{Seqüenciador}{30}{section*.65}%
+\contentsline {paragraph}{El Mòdul:}{30}{section*.66}%
+\contentsline {subsection}{Ritmes de n sobre m}{31}{section*.68}%
+\contentsline {paragraph}{Les Mates:}{31}{section*.69}%
+\contentsline {paragraph}{La Música:}{32}{section*.71}%
+\contentsline {paragraph}{El Mòdul:}{33}{section*.73}%
+\contentsline {subsection}{Ritmes de quadrícula}{33}{section*.74}%
+\contentsline {paragraph}{La Música:}{33}{section*.75}%
+\contentsline {paragraph}{Les Mates:}{33}{section*.77}%
+\contentsline {paragraph}{El mòdul:}{33}{section*.78}%
+\contentsline {subsection}{Ritmes d'Euclides / Ritmes de pas de línia}{34}{section*.79}%
+\contentsline {paragraph}{Les Mates:}{35}{section*.81}%
+\contentsline {paragraph}{La Música:}{35}{section*.82}%
+\contentsline {paragraph}{El Mòdul:}{35}{section*.83}%
+\contentsline {section}{Graph Composer}{36}{section*.85}%
+\contentsline {section}{AI Jam}{38}{section*.89}%
+\contentsline {section}{Con Espressione!}{39}{section*.90}%
+\contentsline {section}{NSynth}{42}{section*.91}%
+\contentsline {paragraph}{Selectors d'instrument}{43}{section*.93}%
+\contentsline {paragraph}{Pantalla}{43}{section*.94}%
+\contentsline {paragraph}{Controls d'envolupant}{43}{section*.95}%
+\contentsline {paragraph}{Interfície tàctil}{44}{section*.96}%
+\contentsline {section}{Lissajous-based exhibits}{45}{section*.97}%
+\contentsline {section}{Galeria de Lissajous}{46}{section*.98}%
+\contentsline {section}{Les Sèries Harmòniques}{47}{section*.100}%
+\contentsline {subsection}{Dispositiu \#1}{47}{section*.102}%
+\contentsline {subsection}{Dispositiu \#2}{48}{section*.103}%
+\contentsline {subsection}{Escultures de Triada}{48}{section*.104}%
+\contentsline {section}{Pink Trombone}{50}{section*.105}%
+\contentsline {section}{Mind and Music Jukebox}{53}{section*.107}%
+\contentsline {section}{Whitney Music Box}{54}{section*.108}%
+\contentsline {section}{Musical Bench}{56}{section*.110}%
+\contentsline {section}{Hands-on Table}{57}{section*.111}%
+\contentsline {section}{La La Cinema}{58}{section*.112}%
+\contentsline {section}{Silent area}{63}{section*.141}%
+\contentsline {section}{Note compass}{64}{section*.142}%
+\contentsline {section}{Show me music}{70}{section*.144}%
+\contentsline {subsection}{Spiral Tone Space}{70}{section*.146}%
+\contentsline {paragraph}{La Música:}{70}{section*.148}%
+\contentsline {paragraph}{Les Mates:}{71}{section*.149}%
+\contentsline {paragraph}{El Mòdul:}{71}{section*.150}%
+\contentsline {subsection}{Space of Three-Note Chords}{71}{section*.151}%
+\contentsline {paragraph}{La Música:}{72}{section*.154}%
+\contentsline {paragraph}{Les Mates}{72}{section*.155}%
+\contentsline {paragraph}{El Mòdul:}{73}{section*.156}%
+\contentsline {subsection}{Pachelbels Canon in D and Pachelballs}{73}{section*.158}%
+\contentsline {paragraph}{Les Mates:}{73}{section*.159}%
+\contentsline {paragraph}{La Música:}{74}{section*.160}%
+\contentsline {paragraph}{El Mòdul:}{74}{section*.161}%
+\contentsline {subsection}{Mozart's Musical Dice Game}{74}{section*.163}%
+\contentsline {paragraph}{La Música:}{75}{section*.164}%
+\contentsline {paragraph}{Les Mates:}{75}{section*.165}%
+\contentsline {paragraph}{El Mòdul:}{76}{section*.167}%
+\contentsline {subsection}{Shepard Tone}{76}{section*.168}%
+\contentsline {paragraph}{La Música:}{77}{section*.171}%
+\contentsline {paragraph}{Les Mates:}{77}{section*.172}%
+\contentsline {paragraph}{El Mòdul:}{77}{section*.173}%
+\contentsline {section}{The Space of Pentatonic Scales}{78}{section*.174}%
+\contentsline {paragraph}{La Música:}{78}{section*.176}%
+\contentsline {paragraph}{Les Mates:}{79}{section*.177}%
+\contentsline {paragraph}{El Mòdul:}{79}{section*.178}%
+\contentsline {section}{The Sound of sequences}{80}{section*.180}%

@@ -1,0 +1,46 @@
+\section{Pink Trombone}
+La veu és l'instrument més vell i complex. Els òrgans vocals humans són únics entre tots els animals i ens permeten comunicar i expressar idees i sentiments amb sons sofisticats que podem crear i controlar instintivament.
+
+Com a instrument, la veu és extremadament rica i complexa. Algunes característiques són particulars i invariables de cada individu, mentre altres es poden canviar per produir sons que podem reconèixer, com lletres i paraules. Cantar requereix que el so no només sigui reconeixible, sinó que ha de ser el pretès per cada peça. Això ja requereix més pràctica i habilitat. Al mòdul es mostra un vídeo d'una ressonància magnètica en secció d'un cantant mentre canta.
+
+En aquest mòdul presentem un model simplificat interactiu que permet replicar amb certa fidelitat la veu humana. Aquest model consta de dos components principals: la producció del so i la seva articulació.
+
+El so es produeix a la glotis (al coll). Aquest òrgan té unes membranes, anomenades cordes vocals, que podem fer vibrar per produir sons mentre traiem aire. Amb la tensió que posem a aquest múscul (les cordes vocals) i la pressió de l'aire que traiem podem controlar el to del so que fem i la seva intensitat, des d'un xiuxiueig fins a un crit. Fent servir aquests paràmetres, el model genera una forma d'ona inicial.
+
+L'ona sonora que surt de la glotis entra al tracte vocal, on articulem el so. Articular es refereix a l'acció de modificar el so que produïm per fer un so fonètic en particular, que són els sons de les lletres que utilitzem quan parlem. Podem veure, de forma simplificada, el tracte vocàlic com un tub, on les ones sonores viatgen a una certa velocitat (la velocitat del so) només en una dimensió (endavant o endarrere). Si el tub fos completament llis i uniforme, les ones podrien arribar de forma ininterrompuda fins als llavis. De tota manera, el tub no és ni llis ni uniforme i el so rebota endavant i endarrere. La característica principal del tracte és el diàmetre de la secció a cada punt, cosa que podem modificar amb la posició de la llengua i als llavis. Els canvis en el diàmetre del tub fan que les ones rebotin. En aquest model, el tracte vocàlic és un tub de 17 cm dividit en 44 seccions, cadascuna amb el seu diàmetre constant.
+
+\begin{figure}[h]
+\centering
+\includegraphics[width=0.4\textwidth]{PinkTrombone_4}
+\end{figure}
+
+La dificultat de propagar una ona per un tub es mesura amb la impedància $Z$, que és inversament proporcional a la seva àrea. Quan l'ona passa per una secció de tub amb impedància $Z_i$ cap a una amb $Z_{i+1}$, el coeficient de reflexió és
+$$r=\frac{Z_i - Z_{i+1}}{Z_i + Z_{i+1}}$$
+i una fracció $r$ de la intensitat de l'ona es reflecteix endarrere, i $(1-r)$ es transmet endavant. El model té en compte dues ones, la que es mou endavant i la que torna endarrere. Calculant la intensitat de les ones (pressió de l'aire) a cada secció a cada instant de temps podem trobar l'ona de pressió que surt dels llavis, que és el so que sentim. A més a més, el model millora amb l'addició d'un segon tub (el nas), que es connecta al tub principal (la boca) al vel palatal.
+
+A la pantalla, el control de la caixa vocal et permet controlar el to (amb el moviment horitzontal) i el volum (amb el moviment vertical) del so que es produeix a la glotis.
+
+Clicant al control de la llengua, la cavitat oral i la cavitat nasal et permet modificar el tracte vocàlic. Les línies representen el diàmetre del tracte a cada secció.
+
+\vfill
+
+Autor del mòdul: Neil Thapen (Institute of Mathematics / Academy of Sciences of the Czech Republic)
+Adaptacions: Eric Londaits (IMAGINARY).
+Text: Daniel Ramos (IMAGINARY).
+
+
+Referències:
+
+Julius O. Smith III, Physical audio signal processing for virtual musical instruments and audio effects. \url{www.ccrma.stanford.edu/~jos/pasp/}
+
+Story, Brad H. A parametric model of the vocal tract area function for vowel and consonant simulation. The Journal of the Acoustical Society of America 117.5 (2005): 3231-3254.
+
+Lu, Hui-Ling, and J. O. Smith. Glottal source modeling for singing voice synthesis. Proceedings of the 2000 International Computer Music Conference. 2000.
+
+Mullen, Jack. Physical modelling of the vocal tract with the 2D digital waveguide mesh. PhD thesis, University of York, 2006.
+
+John Coleman. Acoustics of Tube Models (2): Kelly and Lochbaum method. \url{www.phon.ox.ac.uk/jcoleman/kelly-lochbaum.htm}
+
+Bernard Richter, Matthias Echternach, Louisa Traser, Michael Burdumy, Claudia Spahn. The voice: Insights into the Physiology of Singing and Speaking. DVD-ROM, Helbling eds. 2017.
+
+Pink trombone: \url{www.dood.al/pinktrombone}
