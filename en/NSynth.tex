@@ -1,7 +1,7 @@
 \section{NSynth}
-Can you mix and blend sounds? What is the morphed sound of a guitar and a piano? And that of a car engine sound and a flute? 
+Can you mix and blend sounds? What is the morphed sound of a guitar and a piano? And that of a car engine sound and a flute?
 
-A synthesizer is a device that generates sound, tuned so it can be used as an instrument. Classical analog synthesizers use oscillators and filters, while modern digital synthesizers can work with stored samples, but it is always necessary to describe the timbre with detailed parameters to adjust and tune the final sound. Traditionally, this is done manually by analyzing the sound of real instruments (spectrum, waveform), or by an expert that ``sculpts'' the waveform by hand. 
+A synthesizer is a device that generates sound, tuned so it can be used as an instrument. Classical analog synthesizers use oscillators and filters, while modern digital synthesizers can work with stored samples, but it is always necessary to describe the timbre with detailed parameters to adjust and tune the final sound. Traditionally, this is done manually by analyzing the sound of real instruments (spectrum, waveform), or by an expert that ``sculpts'' the waveform by hand.
 
 Finding a sound ``in between'' two other sounds is not easy, since parameters are highly non-linear. If you take the average of the waveforms (or spectrum) of two instruments, mathematically this would mean adding them, all you obtain is the sound of the two instruments played at the same time, not a new instrument. What you would need instead is features that describe qualities of both instruments, such as how ``bright'', ``multi-phonic'', or ``percussive'' a sound is. Then, what you are looking for is a sound that has the average ``brightness'', ``multi-phonicity'' or ``percussiveness'' of your two original sounds.
 
@@ -15,7 +15,7 @@ The NSynth device on the exhibition contains the trained neural network and can 
 \includegraphics[width=0.7\textwidth]{NSynth_1}
 \end{figure}
 
-\paragraph{Instrument selectors} - These instruments are assigned to the corners of the touch interface. 
+\paragraph{Instrument selectors} - These instruments are assigned to the corners of the touch interface.
 
 \paragraph{Display} - Shows the state of the instrument and additional information about the controls that you are interacting with.
 
@@ -31,15 +31,21 @@ The NSynth device on the exhibition contains the trained neural network and can 
 
 \paragraph{Touch interface} - This is a capacitive sensor, like the mouse pad on a laptop, which is used to explore the world of new sounds that NSynth has generated between your chosen source audio.
 
-\vfill
+\begin{sectcredits}
 
-Author of the exhibit: NSynth is an open-software synthesizer based on machine learning developed by Google's Magenta project. NSynth Super is an open-hardware interface developed by Google Creative Lab. Text: Daniel Ramos (IMAGINARY).
+\item[Author of the exhibit:] NSynth is an open-software synthesizer based on machine learning developed by Google's Magenta project. NSynth Super is an open-hardware interface developed by Google Creative Lab.
 
-References 
+\item[Text:] Daniel Ramos (IMAGINARY).
 
-NSynth: Neural Audio Synthesis. Website at Google's magenta project. \url{www.magenta.tensorflow.org/nsynth}.
+\item[References:] \strut
+\noindent \begin{itemize}[leftmargin=*]
 
-Jesse Engel, Cinjon Resnick, Adam Roberts, Sander Dieleman, Douglas Eck, Karen Simonyan, and Mohammad Norouzi. Neural Audio Synthesis of Musical Notes with WaveNet Autoencoders. \url{www.arxiv.org/abs/1704.01279}, (2017).
+\item \emph{NSynth: Neural Audio Synthesis}. Website at Google's magenta project. \\
+\url{www.magenta.tensorflow.org/nsynth}.
 
-NSynth Super: An experimental physical interface for the NSynth algorithm. Website at Google's Creative Lab. \url{www.nsynthsuper.withgoogle.com}.
+\item Jesse Engel, Cinjon Resnick, Adam Roberts, Sander Dieleman, Douglas Eck, Karen Simonyan, and Mohammad Norouzi. \emph{Neural Audio Synthesis of Musical Notes with WaveNet Autoencoders.} \\
+\url{www.arxiv.org/abs/1704.01279}, (2017).
 
+\item \emph{NSynth Super: An experimental physical interface for the NSynth algorithm.} Website at Google's Creative Lab.\\ \url{www.nsynthsuper.withgoogle.com}.
+\end{itemize}
+\end{sectcredits}

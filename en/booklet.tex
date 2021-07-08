@@ -1,7 +1,14 @@
 \documentclass{lalabook}
 \usepackage[utf8]{inputenc}
+
+
 \usepackage{geometry}
-\geometry{a5paper}
+\geometry{a5paper, inner=15mm, outer=11mm, top=17mm, bottom=17mm}
+
+\setlength{\parindent}{0em}
+\setlength{\parskip}{1ex}
+
+
 \usepackage[hidelinks]{hyperref}
 
 \usepackage{epigraph}
@@ -18,7 +25,11 @@
 \usepackage{xcolor}
 \usepackage{normalcolor}
 
+\newenvironment{sectcredits}
+{\vspace{1cm} \vfill \footnotesize \begin{description}}
+{\end{description}}
 
+\usepackage{enumitem}
 
 \usepackage{tikz}
 
@@ -60,9 +71,9 @@
 \noindent
 \begin{tikzpicture}[remember picture, overlay]
  	\node[inner sep=0pt] at (current page.center) {\includegraphics[width=\paperwidth,height=\paperheight]{cover_blank}};
-	\node at (12.2,1.8) [anchor=east] {\color[rgb]{1,1,1} \Large \textbf{EXHIBITION BOOKLET} };
-	\node at (4.2,-10.6) [anchor=west] { \Huge \bf THE MATHEMATICS};
-	\node at (4.2,-11.6) [anchor=west] {\Huge \bf OF MUSIC};
+	\node at (current page.north east) [anchor=north east, xshift=-6mm, yshift=-8mm, font=\Large\bfseries]{\color[rgb]{1,1,1}EXHIBITION BOOKLET};
+	\node at (current page.north east)  [anchor=north east, xshift=-6mm, yshift=-132mm, align=left, font=\Huge\bfseries]  {THE MATHEMATICS \\ OF MUSIC};
+	%\node at (4.2,-11.6) [anchor=west] {\Huge \bf OF MUSIC};
 \end{tikzpicture}
 
 
