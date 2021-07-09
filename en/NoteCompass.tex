@@ -12,15 +12,18 @@ Graphically, we can think of the octave cycle as a circle, and the basic units o
 
 Thereby we will see that some points of the scale are adjacent (at distance of 1 unit) and others  leave  a gap of distance 2 (skipping over points which are not in the scale). By their arithmetic properties, it is impossible to distribute 7 out of  12 points evenly on the dodecagon, but the notes of our scale are distributed as evenly as possible. We find that there are always five major steps (2 units, also called tone) and two minor steps (1 unit, called semitone). The minor steps are separated by groups of two and three major steps, respectively. This scale is called the diatonic scale. If we account for the beginning and ending of the scale we end up with one of the following patterns (called modes), that receive Greek names:
 
-	2,2,1,2,2,2,1 - Ionian (major)
-	2,1,2,2,2,1,2 - Dorian
-	1,2,2,2,1,2,2 - Phrygian
-	2,2,2,1,2,2,1 - Lydian
-	2,2,1,2,2,1,2 - Mixolydian
-	2,1,2,2,1,2,2 - Aeolian (minor)
-	1,2,2,1,2,2,2 - Locrian
-
-Note that all the modes are in cyclic permutation of each other, that is, taking each time the first item and placing it on the end. With this model, to create any concrete mode you only need to choose one of the 12 points (tonic note), and one of the 7 step patterns that you want to use. This gives you $12\cdot 7=84$ possibilities. It is important to observe that the mode is not just the set of 7 notes, it is also their order and starting point that matters.
+\begin{center}
+\begin{tabular}{rl}
+	2 , 2 , 1 , 2 , 2 , 2 , 1 & Ionian (major) \\
+	2 , 1 , 2 , 2 , 2 , 1 , 2 & Dorian \\
+	1 , 2 , 2 , 2 , 1 , 2 , 2 & Phrygian \\
+	2 , 2 , 2 , 1 , 2 , 2 , 1 & Lydian \\
+	2 , 2 , 1 , 2 , 2 , 1 , 2 & Mixolydian \\
+	2 , 1 , 2 , 2 , 1 , 2 , 2 & Aeolian (minor) \\
+	1 , 2 , 2 , 1 , 2 , 2 , 2 & Locrian \\
+\end{tabular}
+\end{center}
+Note that all the modes are in cyclic permutation of each other, that is, taking each time the first item and placing it on the end. With this model, to create any concrete mode you only need to choose one of the 12 points (tonic note), and one of the 7 step patterns that you want to use. This gives you 12 · 7 = 84 possibilities. It is important to observe that the mode is not just the set of 7 notes, it is also their order and starting point that matters.
 
 The Note Compass allows you to visualize the 84 different possible diatonic modes. The instrument consists of two concentric disks. The foreground rotating 12-pointed star represents the 12 notes in an octave. The background plate is divided into sectors that allow to select the notes. Notes on the star that lie on a colored sector are part of the mode, notes that lie on a gray sector are not. The multicolor keyboard of the tone compass app has only the keys for the notes in the scale, and not the others.
 
@@ -42,12 +45,12 @@ In view of these attributes, there are three ways to refer to a note:
 \end{enumerate}
 
 Note that the latin note names are
+\begin{center}
+C, C$\sharp$/D$\flat$, D, D$\sharp$/E$\flat$, E, F, F$\sharp$/G$\flat$, G, G$\sharp$/A$\flat$, A, A$\sharp$/B$\flat$, B.
+\end{center}
+The notation is essentially based on the diatonic scale, and it is anchored in one particular family of modes whose notes are named  by the single letters  A, B, C, D, E, F, G. They correspond to the white keys of the piano. All other  notes have accidentals $\sharp$ (sharps) or $\flat$ (flats) attached to their  names. A$\sharp$ is meant to be higher than A,  B$\flat$ is meant to be lower than B. The amount of alteration is the difference between the major and the minor step, and in the twelve-note system, A$\sharp$ and B$\flat$ are identified and located on the same needle of the star.
 
-C, C\#/Db, D, D\#/Eb, E, F, F\#/Gb, G, G\#/Ab, A, A\#/Bb, B.
-
-The notation is essentially based on the diatonic scale, and it is anchored in one particular family of modes whose notes are named  by the single letters  A, B, C, D, E, F, G. They correspond to the white keys of the piano. All other  notes have accidentals \# (sharps) or b (flats) attached to their  names. A\# is meant to be higher than A,  Bb is meant to be lower than B. The amount of alteration is the difference between the major and the minor step, and in the twelve-note system, A\# and Bb are identified and located on the same needle of the star.
-
-The seven notes of any diatonic mode are graphically represented on seven successive height degrees of the musical staff. Their note names always run through all the seven latin names A, B, C, D, E, F, G (possibly supplemented with either sharps \# or flats b so that we don't have pairs like A and A\# in the same mode). The locations of the major and minor steps are graphically not explicitly shown, musicians know them implicitly from the clefs.
+The seven notes of any diatonic mode are graphically represented on seven successive height degrees of the musical staff. Their note names always run through all the seven latin names A, B, C, D, E, F, G (possibly supplemented with either sharps $\sharp$ or flats $\flat$ so that we don't have pairs like A and A$\sharp$ in the same mode). The locations of the major and minor steps are graphically not explicitly shown, musicians know them implicitly from the clefs.
 
 This is a tribute to historical tradition, to the fact that all modes are instances and, at the same time, alterations of one single scale (that today we call C-Major).
 
@@ -57,7 +60,7 @@ C -> (1, do), D -> (2, re), E -> (3, mi), F -> (4, fa) , G -> (5,so), A -> (6, l
 
 Observe that the active needles are (from the 1st to 7th sectors) arranged in steps  2,2,1,2,2,2,1 (Ionian mode). The minor step (1 semitone) is when two consecutive needles are active.
 
-Now move the star one elementary rotation in the counter-clockwise direction. The B-needle pointing to (7, ti) leaves the violet-colored segment and points into the gray segment between the violet and the red one. It is no longer an active note of the chosen mode. Instead the Bb-needle enters from a previously gray position between the dark blue and violet segments into the violet segment and points at the syllable fa. The minor step (ti-do) between B and C is transformed into a major step (fa-so) between Bb and C and the major step (la-ti) between A and B is transformed into a minor step (mi-fa) between A and Bb. The resulting step interval pattern is 2,2,1,2,2,1,2 (Mixolydian mode).
+Now move the star one elementary rotation in the counter-clockwise direction. The B-needle pointing to (7, ti) leaves the violet-colored segment and points into the gray segment between the violet and the red one. It is no longer an active note of the chosen mode. Instead the B$\flat$-needle enters from a previously gray position between the dark blue and violet segments into the violet segment and points at the syllable fa. The minor step (ti-do) between B and C is transformed into a major step (fa-so) between B$\flat$ and C and the major step (la-ti) between A and B is transformed into a minor step (mi-fa) between A and B$\flat$. The resulting step interval pattern is 2,2,1,2,2,1,2 (Mixolydian mode).
 
 It is crucial that with each elementary rotation only one needle gets de-selected and one (adjacent to it) gets selected, thus only one note is altered in the scale. This fact comes from the particular irregularity of the step pattern of the diatonic scale. Mathematically, it is a cyclic permutation of the step pattern that can also be obtained by switching adjacent steps (a transposition). Here is an illustration of this peculiarity: If we rotate the name of our exhibition lalalab four letters to the left, we obtain lablala. If we exchange its last two letters, we obtain lalalba, which obviously is different from lablala. Applying, however, these two transformations to the Ionian step interval pattern 2212221, we obtain 2212212 in both cases.
 
