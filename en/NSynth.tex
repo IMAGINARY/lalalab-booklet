@@ -9,10 +9,21 @@ NSynth is a synthesizer that uses Artificial Intelligence to interpolate and mix
 
 The NSynth device on the exhibition contains the trained neural network and can interpolate between four selected sounds (using the four big knobs). By touching a point on the square touch sensor, the synthesizer adjusts the parameters to be proportional to the coordinates on the square. The four original sounds are associated with the corners, and all other points correspond to newly created sounds.
 
-
 \begin{figure}[h]
-\centering
-\includegraphics[width=0.7\textwidth]{NSynth_1}
+\centering \small
+\begin{tikzpicture}
+\node at (0,0) { \includegraphics[width=0.7\textwidth]{NSynth_1_nolabels} };
+%\draw[step=1,gray,very thin] (-3,-3) grid (3,3);
+\node at (0.6,2.6) [align=center, anchor=south]
+    {Display};
+\node at (-2.5,-0.4) [align=center, anchor=east]
+    {Instrument \\ selectors};
+\node at (2.9,-0.2) [align=center, anchor=west]
+    {Touch \\ interface};
+\node at (0.5,-2.2) [align=center, anchor=north]
+    {Envelope controls};
+\end{tikzpicture}
+\vspace{-2em}
 \end{figure}
 
 \paragraph{Instrument selectors} - These instruments are assigned to the corners of the touch interface.
