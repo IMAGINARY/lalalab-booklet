@@ -50,6 +50,11 @@
 \fancyfoot[LE,RO]{\bfseries \large \thepage}
 \renewcommand{\headrulewidth}{0pt}
 
+\fancypagestyle{notes}{%
+\fancyhf{}%
+\fancyhead[LE,RO]{\bfseries \scriptsize NOTES}
+\fancyfoot[LE,RO]{\bfseries \large \thepage}
+}
 
 \usepackage{tocloft}
 \renewcommand{\cftdot}{}
@@ -106,6 +111,11 @@
 \input{ShowMeMusic}
 \input{PentatonicScales}
 \input{SoundOfSequences}
+
+
+\newpage \strut \pagestyle{notes} % Add pages to reach a multiple of 4, for booklet printing.
+\newpage \strut
+
 
 \newpage
 \pagecolor[RGB]{239,7,115}
