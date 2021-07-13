@@ -5,7 +5,7 @@ This is the LaTeX version of the Booklet of the [La La Lab exhibition](https://l
 The official version is still the InDesign version available [here](https://imaginary.org/sites/default/files/lala-booklet.pdf).
 
 ## Available languages
-* English (proofreading required)
+* English
 * Catalan (proofreading required)
 
 ## Compiling

@@ -1,7 +1,7 @@
 \section{Scale Lab}
-Podem sentir un  rang molt ampli de freqüències. De totes maneres, no fem servir totes les freqüències audibles per fer música, en seleccionem un conjunt per determinar el to dels sons. Aquests conjunts es coneixen com a escales. En funció de l'escala que escollim utilitzarem unes combinacions o unes altres. Un fet interessant és que les persones troben que algunes combinacions de sons sonen  ``bé'' juntes (són consonants), mentre que altres sonen més aviat ``malament'' (són dissonants). Això és un fenomen psicològic i fisiològic que encara s'està investigant actualment, però que va determinar la formació de les escales i ha marcat les pràctiques musicals des dels principis de la història de la música. 
+Podem sentir un  rang molt ampli de freqüències. De totes maneres, no fem servir totes les freqüències audibles per fer música, en seleccionem un conjunt per determinar el to dels sons. Aquests conjunts es coneixen com a escales. En funció de l'escala que escollim utilitzarem unes combinacions o unes altres. Un fet interessant és que les persones troben que algunes combinacions de sons sonen  ``bé'' juntes (són consonants), mentre que altres sonen més aviat ``malament'' (són dissonants). Això és un fenomen psicològic i fisiològic que encara s'està investigant actualment, però que va determinar la formació de les escales i ha marcat les pràctiques musicals des dels principis de la història de la música.
 
-En aquest mòdul, explorem la creació d'escales i les seves propietats. Al costat de la línia grisa horitzontal es representen les freqüències. Els marcadors representen les freqüències seleccionades per una escala en particular i es relacionen amb el teclat amb les línies blaves que indiquen quina tecla fa sonar cada freqüència. 
+En aquest mòdul, explorem la creació d'escales i les seves propietats. Al costat de la línia grisa horitzontal es representen les freqüències. Els marcadors representen les freqüències seleccionades per una escala en particular i es relacionen amb el teclat amb les línies blaves que indiquen quina tecla fa sonar cada freqüència.
 
 \begin{figure}[h]
 \centering
@@ -19,7 +19,7 @@ Pots triar entre les escales occidentals (amb diverses afinacions), dues escales
 El botó d'anàlisis conté ginys que t'ajudaran a entendre l'escala o afinació que has seleccionat.
 
 \subsubsection{Forma d'ona}
-Aquest és el senyal que sents, el moviment de la membrana de l'altaveu (i dels teus timpans!) amb el temps. Tria un sinus com a timbre i prem una tecla per sentir una freqüència pura. Toca'n dos per veure la suma de les ones. Si proves diferents timbres (fets amb diverses freqüències) veuràs les diferents formes d'ona i en podràs sentir la diferència. 
+Aquest és el senyal que sents, el moviment de la membrana de l'altaveu (i dels teus timpans!) amb el temps. Tria un sinus com a timbre i prem una tecla per sentir una freqüència pura. Toca'n dos per veure la suma de les ones. Si proves diferents timbres (fets amb diverses freqüències) veuràs les diferents formes d'ona i en podràs sentir la diferència.
 
 \subsubsection{Lissajous}
 La corba de Lissajous es dibuixa amb un punt mòbil i que té una coordenada X donada per l'oscil·lació determinada per la primera tecla que prems i una coordenada Y donada per la segona. Això funciona millor amb ones sinusoidals pures com a timbre, però també crea corbes molt interessants amb timbres més complexos. Intervals més simples entre dues freqüències dibuixen figures més simples, que també són les més ``consonants''.
@@ -37,11 +37,20 @@ Un to produït per un instrument no sol ser una sola freqüència pura sinó una
 Les següents pàgines descriuen conceptes i experiments que es poden fer utilitzant el mòdul Scale Lab.
 
 \subsubsection{Batec}
-Si dues freqüències són properes, apareix un fenomen interessant i fonamental: el volum del so sembla incrementar i disminuir periòdicament... i realment ho fa. Hi ha dues maneres d'explicar aquest efecte: assumeix que tens dues freqüències, una de 100 vibracions per segon i una altra de 101 vibracions per segon. En tot moment les dues ones se sumen. Si el pic d'una ona es troba amb la vall de l'altra una cancel·la l'efecte de l'altre. Per altra banda, si un pic coincideix amb un altre pic, la suma farà que la intensitat de la vibració total sigui el doble que la de les originals. 
+Si dues freqüències són properes, apareix un fenomen interessant i fonamental: el volum del so sembla incrementar i disminuir periòdicament... i realment ho fa. Hi ha dues maneres d'explicar aquest efecte: assumeix que tens dues freqüències, una de 100 vibracions per segon i una altra de 101 vibracions per segon. En tot moment les dues ones se sumen. Si el pic d'una ona es troba amb la vall de l'altra una cancel·la l'efecte de l'altre. Per altra banda, si un pic coincideix amb un altre pic, la suma farà que la intensitat de la vibració total sigui el doble que la de les originals.
 
 \begin{figure}[h]
 \centering
-\includegraphics[width=0.9\textwidth]{ScaleLab_3}
+\begin{tikzpicture}
+\scriptsize
+\node at (0,0) {\includegraphics[width=0.9\textwidth]{ScaleLab_3_nolabels} };
+\node at (-3.86,-1.6) [align=center, anchor=north]
+    {Muntanya troba muntanya, \\ el senyal es fa sord.};
+\node at (1.73,-1.6) [align=center, anchor=north]
+    {Muntanya troba vall, \\ el senyal es fa fort.};
+%\draw (-3.86,-1.6) circle [radius=0.5mm];
+%\draw (1.73,-1.6) circle [radius=0.5mm];
+\end{tikzpicture}
 \end{figure}
 
 La segona manera de mirar-ho és més quantitativa. Hi ha una fórmula trigonomètrica que descriu el que passa quan es sumen dues ones sinusoidals $f_1$ i $f_2$:
@@ -49,12 +58,12 @@ $$\sin(f_1 \cdot t) + \sin(f_2\cdot t) = 2 \sin\left( \frac{f_1+f_2}{2}\cdot t\r
 
 L'ona resultant es pot considerar com un senyal que vibra a la freqüència mitjana (la part de sinus de la dreta de l'equació) i modulada amb una baixa freqüència depenent de la diferència entre les dues freqüències originals (la part de cosinus de la dreta de l'equació). Si les freqüències són properes se sentiran canvis a freqüències baixes en la intensitat del so.
 
-\paragraph{Experiment:} Ves a timbre i selecciona una ona sinusoidal pura. Després fes servir dos dits per generar dos tons propers. Intenta escoltar el batec. Com més properes són les freqüències més lenta serà. En canvi, si separes les freqüències, el batec es fa tan de pressa que es percep com una dissonància. Si les separes encara més acabaràs sentint dos tons diferents. Si fas servir l'eina d'ona o Lissajous podràs veure el batec representat gràficament. 
+\paragraph{Experiment:} Ves a timbre i selecciona una ona sinusoidal pura. Després fes servir dos dits per generar dos tons propers. Intenta escoltar el batec. Com més properes són les freqüències més lenta serà. En canvi, si separes les freqüències, el batec es fa tan de pressa que es percep com una dissonància. Si les separes encara més acabaràs sentint dos tons diferents. Si fas servir l'eina d'ona o Lissajous podràs veure el batec representat gràficament.
 
-\paragraph{Música:}Els batecs lents com el vibrato fan els sons més rics i una mica més orgànics. Per aquest motiu en molts instruments basen la seva generació de so en aquest fenomen. En un piano, les notes agudes solen tenir dues o tres cordes i aquestes estan lleugerament desafinades entre elles, donant lloc a un to més orgànic i ric. Un altre exemple és el mode Musette en un acordió. Aquest té dues llenguetes metàl·liques lleugerament desafinades que generen un so amb vibrato. 
+\paragraph{Música:}Els batecs lents com el vibrato fan els sons més rics i una mica més orgànics. Per aquest motiu en molts instruments basen la seva generació de so en aquest fenomen. En un piano, les notes agudes solen tenir dues o tres cordes i aquestes estan lleugerament desafinades entre elles, donant lloc a un to més orgànic i ric. Un altre exemple és el mode Musette en un acordió. Aquest té dues llenguetes metàl·liques lleugerament desafinades que generen un so amb vibrato.
 
 \subsubsection{So desde Harmònics}
-Els ajusts de to del Scale Lab permeten molts més sons que les ones sinusoidals simples. Pots combinar ones sinusoidals per generar un so més complex. Els botons lliscants a la caixa de timbre et permeten afegir múltiples de la freqüència base. Si el botó lliscant de difusió està posat a 1, les freqüències utilitzades són les múltiples enteres $f$, $2f$, $3f$, $4f$, $5f$, $6f$, $7f$ i $8f$ de la freqüència base. La síntesi de Fourier implica que qualsevol senyal periòdic es pot generar per la suma ponderada d'ones sinusoidals d'aquest tipus. Per replicar perfectament un senyal et caldrien infinits sumands, però, de tota manera, les 8 freqüències que ofereix el Scale Lab ja donen un resultat prou precís. 
+Els ajusts de to del Scale Lab permeten molts més sons que les ones sinusoidals simples. Pots combinar ones sinusoidals per generar un so més complex. Els botons lliscants a la caixa de timbre et permeten afegir múltiples de la freqüència base. Si el botó lliscant de difusió està posat a 1, les freqüències utilitzades són les múltiples enteres $f$, $2f$, $3f$, $4f$, $5f$, $6f$, $7f$ i $8f$ de la freqüència base. La síntesi de Fourier implica que qualsevol senyal periòdic es pot generar per la suma ponderada d'ones sinusoidals d'aquest tipus. Per replicar perfectament un senyal et caldrien infinits sumands, però, de tota manera, les 8 freqüències que ofereix el Scale Lab ja donen un resultat prou precís.
 
 \begin{figure}
 \centering
@@ -63,7 +72,7 @@ Els ajusts de to del Scale Lab permeten molts més sons que les ones sinusoidals
 \end{figure}
 
 \paragraph{Experiment:}
-Ves a timbre i experimenta amb les diferents models predefinits de forma d'ona (els botons de l'esquerra). Mou els botons lliscants per cada harmònic per veure com canvia el so. Pots fer servir l'eina d'anàlisis per veure les formes d'ona que has generat. 
+Ves a timbre i experimenta amb les diferents models predefinits de forma d'ona (els botons de l'esquerra). Mou els botons lliscants per cada harmònic per veure com canvia el so. Pots fer servir l'eina d'anàlisis per veure les formes d'ona que has generat.
 
 \paragraph{Music:}
 És un fet que el so de molts instruments (particularment els de corda, vent-metall o vent-fusta) s'aproximen fàcilment amb la descomposició del seu so en harmònics. Això té relació amb les físiques específiques dels instruments.
@@ -80,11 +89,11 @@ El món no és un laboratori ideal. Les físiques són complexes i els sons no s
 $$1^af, 2^af, 3^af, 4^af, 5^af, 6^af, 7^af, 8^af$$
 Per un exponent $a$ petit. Fixa't que la suma resultant dels parcials (que és el nom adient en aquest cas) mostra un comportament constantment variant a la corba sonora resultant i ja no és periòdica. Aquest so resultant és més ric i orgànic.
 
-\paragraph{Experiment:} 
+\paragraph{Experiment:}
 A la caixa de timbre del Scale Lab hi ha un botó lliscant anomenat dispersió just a sota dels botons lliscants dels harmònics. Juga amb aquest botó lliscant per experimentar amb espectres dispersos o comprimits. Escolta com canvia el so amb petites dispersions. Analitza el so resultant amb l'eina ona per veure com en canvia la forma. Com sonen els intervals ara? Quines són les diferències entre baixa i alta dispersió? I entre dispersió i compressió de l'espectre? Hi ha un món de possibilitats per descobrir.
 
 \subsubsection{Corbes de Dissonància}
-Tan bon punt dos tons (amb un cert espectre de parcials) es reprodueixen alhora els nostres cervells comencen a categoritzar els intervals en un cert rang entre sons agradables (consonants) i no tan agradables (dissonants). Podríem pensar que l'art de la música és l'art de crear la tensió adequada entre consonància (per agradar a la gent) i dissonància (per fer-ho més interessant). De fet, diferents èpoques i cultures tenen opinions molt diverses sobre el que es considera bon gust, però el concepte global preval. 
+Tan bon punt dos tons (amb un cert espectre de parcials) es reprodueixen alhora els nostres cervells comencen a categoritzar els intervals en un cert rang entre sons agradables (consonants) i no tan agradables (dissonants). Podríem pensar que l'art de la música és l'art de crear la tensió adequada entre consonància (per agradar a la gent) i dissonància (per fer-ho més interessant). De fet, diferents èpoques i cultures tenen opinions molt diverses sobre el que es considera bon gust, però el concepte global preval.
 
 \begin{figure}[h]
 \centering
@@ -115,7 +124,15 @@ La següent imatge mostra el que passa amb un espectre de parcials lleugerament 
 
 \begin{figure}[h]
 \centering
-\includegraphics[width=0.9\textwidth]{ScaleLab_11}
+\begin{tikzpicture}
+\scriptsize
+\node at (0,0) {\includegraphics[width=0.9\textwidth]{ScaleLab_11_nolabels} };
+\node at (-1,-1.65) [align=left, anchor=west]
+    {dissonància};
+\node at (-1,-2.08) [align=left, anchor=west]
+    {consonància};
+%\draw (-1,-2.05) circle [radius=0.5mm];
+\end{tikzpicture}
 \end{figure}
 
 Per un músic acostumat al nostre clàssic sistema de tons el resultat pot ser impactant. De cop i volta els intervals que solen sonar consonants (com l'octava) sonen marcadament dissonants. Per altra banda, altres que solien sonar molt dissonants (com la petita novena entre el do i el do sostingut) sonen preciosos.
@@ -147,7 +164,7 @@ $$\left( \frac{3}{2}\right)^{12} = 129.7463 \ldots \approx 2^7 = 128 .$$
 
 Els 12 intervals són el primer sistema en què els conjunts s'apropen a una relació d'octava. Si algú volgués un sistema tonal centrat en octaves i quintes, el sistema de 12 tons és un bon punt de partida.
 
-Per desgràcia, aquesta relació no és perfecta i aquí és on tota la història dels sistemes d'afinació comença: s'han de fer compromisos i les diferents èpoques han resolt aquesta tensió de maneres diferents. 
+Per desgràcia, aquesta relació no és perfecta i aquí és on tota la història dels sistemes d'afinació comença: s'han de fer compromisos i les diferents èpoques han resolt aquesta tensió de maneres diferents.
 
 \begin{figure}[h]
 \centering
@@ -169,7 +186,7 @@ Afinació justa: considerem ara una afinació que es centra en quintes i tercere
 \caption*{Afinació justa}
 \end{figure}
 
-Pots tocar un munt de terceres i quintes perfectes amb aquesta afinació, però en perds d'altres. Aquesta petita quadrícula que acabes de veure és una petita porció del Tonnetz. 
+Pots tocar un munt de terceres i quintes perfectes amb aquesta afinació, però en perds d'altres. Aquesta petita quadrícula que acabes de veure és una petita porció del Tonnetz.
 
 
 Afinació de temperament igual: si extens tant l'afinació pitagòrica com l'afinació justa als 12 semitons, alguns intervals seran perfectes, però d'altres no sonaran tan bé. L'aproximació moderna a l'afinació consisteix q evitar això mitjançant la dispersió igualitària de l'error sobre tots els intervals. (Això es pot considerar com una mena d'aproximació democràtica a l'afinació). En l'afinació de temperament igual una octava es divideix en 12 semitons idèntics. Cada semitò multiplica la seva freqüència per un factor de $\sqrt[12]{2}$ i això permet arribar a una octava perfecta precisament cada 12 esglaons. Amb aquest mètode, totes les quintes arrosseguen el mateix error i el mateix passa a la resta d'acords i intervals. A continuació es comparen els valors de l'afinació de temperament igual amb els de l'afinació perfecta:
@@ -178,11 +195,20 @@ $$\textrm{for thirds: } (\sqrt[12]{2})^4 = 1.26\ldots \approx 1.25 = \frac{5}{4}
 S'observa que aquestes aproximacions són molt bones.
 
 \paragraph{Experiment:}
-Obre la caixa d'afinacions i experimenta amb diferents afinacions occidentals. Els colors que mostra el Tonnetz indiquen com són de propers els intervals de l'escala seleccionada als perfectes. És molt instructiu analitzar les diferents afinacions amb l'eina ràtio. Aquesta mostra les ràtios dels intervals si aquests es toquessin al teclat. La fotografia següent mostra les ràtios de freqüència per un acord de Do major. 
+Obre la caixa d'afinacions i experimenta amb diferents afinacions occidentals. Els colors que mostra el Tonnetz indiquen com són de propers els intervals de l'escala seleccionada als perfectes. És molt instructiu analitzar les diferents afinacions amb l'eina ràtio. Aquesta mostra les ràtios dels intervals si aquests es toquessin al teclat. La fotografia següent mostra les ràtios de freqüència per un acord de Do major.
 
 \begin{figure}[h]
 \centering
-\includegraphics[width=0.95\textwidth]{ScaleLab_18}
+\begin{tikzpicture}
+\scriptsize
+\node at (0,0) { \includegraphics[width=0.95\textwidth]{ScaleLab_18_nolabels} };
+\node at (-5.75,-1.65) [align=left, anchor=west]
+    {Afinació pitagòrica};
+\node at (-1.65,-1.65) [align=left, anchor=west]
+    {Afinació justa};
+\node at (2.5,-1.65) [align=left, anchor=west]
+    {Afinació de temperament igual};
+\end{tikzpicture}
 \end{figure}
 
 \subsubsection{Escales Raga Índies}
@@ -193,9 +219,9 @@ Hi ha una altra manera de tocar terceres i quintes perfectes: afegir més tons a
 \includegraphics[width=0.9\textwidth]{ScaleLab_19}
 \end{figure}
 
-Cada fletxa horitzontal indica (fins al salt d'octava) una octava perfecta i cada fletxa vertical una tercera perfecta. A diferència de la música occidental, la música Raga té una tradició més oral que escrita. Per aquest motiu, és força difícil d'aconseguir un sistema concret d'afinació, però el sistema que es descriurà que consisteix en 22 tons s'accepta per la majoria de persones que han analitzat la música índia. Llavors, què és tan especial i interessant sobre aquest sistema d'afinació i per quin motiu hi ha exactament 22 tons?  
+Cada fletxa horitzontal indica (fins al salt d'octava) una octava perfecta i cada fletxa vertical una tercera perfecta. A diferència de la música occidental, la música Raga té una tradició més oral que escrita. Per aquest motiu, és força difícil d'aconseguir un sistema concret d'afinació, però el sistema que es descriurà que consisteix en 22 tons s'accepta per la majoria de persones que han analitzat la música índia. Llavors, què és tan especial i interessant sobre aquest sistema d'afinació i per quin motiu hi ha exactament 22 tons?
 
-Per començar, cal adonar-se que les Ragues índies sempre es refereixen a un to base. Normalment un interval es toca constantment de fons, com un brunzit. El més habitual és el Do-Sol. Fixa't com aquest interval és el centre de simetria del diagrama anterior. 
+Per començar, cal adonar-se que les Ragues índies sempre es refereixen a un to base. Normalment un interval es toca constantment de fons, com un brunzit. El més habitual és el Do-Sol. Fixa't com aquest interval és el centre de simetria del diagrama anterior.
 
 La fila central del diagrama és l'escala pitagòrica amb 11 quintes perfectes. Ara es saturen amb l'addició de les terceres perfectes, cosa que es fa molt enginyosament. Per veure-ho reordenem les notes de l'escala pitagòrica per formar una cadena de semitons. Obtenim:
 
@@ -204,16 +230,16 @@ La fila central del diagrama és l'escala pitagòrica amb 11 quintes perfectes. 
 \includegraphics[width=0.95\textwidth]{ScaleLab_21}
 \end{figure}
 
-Les ràtios entre els tons representen les ràtios de freqüències que vénen de l'afinació pitagòrica. 
+Les ràtios entre els tons representen les ràtios de freqüències que vénen de l'afinació pitagòrica.
 
-Pots observar com, gairebé de forma màgica, només apareixen dos tipus de fraccions. Els colors al diagrama marquen la més gran de les fraccions, per tant tenim salts grans i petits de semitons. Dos tons relacionats per un salt gran tenen el mateix color. Ara es pot dividir l'interval de 2187/2048 restant de forma elegant afegint dues noves notes.  
+Pots observar com, gairebé de forma màgica, només apareixen dos tipus de fraccions. Els colors al diagrama marquen la més gran de les fraccions, per tant tenim salts grans i petits de semitons. Dos tons relacionats per un salt gran tenen el mateix color. Ara es pot dividir l'interval de 2187/2048 restant de forma elegant afegint dues noves notes.
 
 \begin{figure}[h]
 \centering
 \includegraphics[width=0.95\textwidth]{ScaleLab_22}
 \end{figure}
 
-A l'exemple anterior s'observa que s'obté una versió més aguda del Re bemoll i una versió més greu del Re. Aquestes són exactament les dues noves notes afegides amb el sistema mencionat. Ara podem fer una divisió similar per tota la resta de salts grans de semitò. Això resulta en un sistema amb 22 tons, mostrats amb colors al següent esquema del sistema tonal: 
+A l'exemple anterior s'observa que s'obté una versió més aguda del Re bemoll i una versió més greu del Re. Aquestes són exactament les dues noves notes afegides amb el sistema mencionat. Ara podem fer una divisió similar per tota la resta de salts grans de semitò. Això resulta en un sistema amb 22 tons, mostrats amb colors al següent esquema del sistema tonal:
 
 \begin{figure}[h]
 \centering
@@ -226,10 +252,12 @@ Fixa't que el Do i el Sol juguen un paper especial en aquest sistema, ja que só
 Els tons del sistema d'afinació Raga es diuen Shrutis. Tal com es fa amb les afinacions occidentals, sovint les melodies no utilitzen tots els tons alhora. En comptes d'això se seleccionen algunes notes per formar escales més petites basades en aquest sistema més gran. La selecció d'aquestes subescales (normalment d'entre 4 i 7 tons) també segueixen certes normes, però no s'entrarà en tant detall aquí.
 
 \paragraph{Experiment:}
-Obre la caixa d'afinació i experimenta amb els sons de les afinacions Raga. Pots seleccionar un munt de subescales usualment utilitzades amb el sistema de 22 tons. També pot ser interessant mesurar les ràtios de freqüència entre els tons. 
+Obre la caixa d'afinació i experimenta amb els sons de les afinacions Raga. Pots seleccionar un munt de subescales usualment utilitzades amb el sistema de 22 tons. També pot ser interessant mesurar les ràtios de freqüència entre els tons.
 
-\vfill
-Autors del mòdul: Jürgen Richter-Gebert, Technical University of Munich / Motor de so: Patrick Wilson i Aaron Montag / basat en CindyJS.org
-Text: Jürgen Richter-Gebert (TU Munich)
+\begin{sectcredits}
+\item[Autor del mòdul:] Jürgen Richter-Gebert (Technical University of Munich).
 
+\item[Agraïments:] Patrick Wilson i Aaron Montag (sistema de so). Basat en CindyJS.org
 
+\item[Text:] Jürgen Richter-Gebert (TU Munich).
+\end{sectcredits}

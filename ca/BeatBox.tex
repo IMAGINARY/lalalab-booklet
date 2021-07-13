@@ -5,16 +5,16 @@ Amb la melodia i l'harmonia, el ritme és un dels components més importants de 
 
 Rarament es s'anomena un concepte científic amb el nom de la persona que primer hi va tractar. Aquest és el cas dels famosos nombres de Fibonacci. Fibonacci va mencionar-los en un exercici de càlcul al seu llibre Liber Abaci publicat l'any 1202. De totes maneres, ja al voltant de l'any 1050, l'erudit indi Hemachendra ja havia estudiat aquests nombres en un context relacionat amb el ritme.
 
-\begin{wrapfigure}{l}{0.4\textwidth}
+\begin{wrapfigure}[24]{l}{0.4\textwidth}
 \centering
 \includegraphics[width=0.4\textwidth]{BeatBox_1}
 \caption*{Fibonacci rhythm}
 \end{wrapfigure}
 
 Imagina que vols omplir un ritme amb un nombre n de pulsacions amb patrons de longitud 1 o 2. Per exemple, un ritme de 8 pulsacions es podria omplir amb 1-1-1-1-1-1-1-1 o 2-2-2-2 o altres patrons més complicats, com ara 2-1-2-1-2 o 2-1-2-2-1. Quantes possibilitats hi ha? Aquest tipus de preguntes apareixen tant a la poesia quan parlem sobre versos i síl·labes, coma a la música quan parlem de ritmes fets amb blanques i negres. Resulta que el nombre de possibilitats és un nombre de Fibonacci (o, encara millor, d'Hemachendra). Un nombre de la seqüència:
-
-1, 1, 2, 3, 5, 8, 13, 21, 34, 55, 89,144,...
-
+\begin{center}
+1, 1, 2, 3, 5, 8, 13, 21, 34, 55, 89, 144,...
+\end{center}
 On (després de començar amb 1, 1) cada nombre és la suma dels dos anteriors. De fet, hi ha exactament 34 maneres d'omplir un patró de 8 pulsacions amb uns i dosos.
 
 \paragraph{La Música:}
@@ -34,16 +34,11 @@ La peça que sents en aquest mòdul és un exemple impressionant de com una idea
 \begin{figure}[h]
 \centering
 \includegraphics[width=0.9\textwidth]{BeatBox_2}
+\caption*{3 aplaudiments - pausa - 2 aplaudiments - pausa - 1 aplaudiment - pausa - 2 aplaudiments  - pausa ... i repeteix}
 \end{figure}
 
-3 aplaudiments - pausa - 2 aplaudiments - pausa - 1 aplaudiment - pausa - 2 aplaudiments  - pausa ... i repeteix
 
 La complexitat s'aconsegueix tocant exactament el mateix ritme amb dues o més persones, però desplaçant el començament n pulsacions, on n pot anar del 0 fins a l'11. D'aquesta manera hi ha fins a 12 possibles resultats. Pots fer-los tots amb algú altre?
-
-\begin{wrapfigure}{l}{0.35\textwidth}
-\centering
-\includegraphics[width=0.35\textwidth]{BeatBox_3}
-\end{wrapfigure}
 
 \paragraph{La Música:}
 Una Música Mínima ( bàsicament composta per Steve Reich) intenta crear música interessant amb progressions minimalistes de la partitura. Desplaçar un patró rítmic només una pulsació es pot considerar com un element típic de progressió de la Música Mínima. De fet, la peça d'aplaudiments necessita una enorme concentració des del moment en què les dues persones comencen a tocar juntes. Per això, tot i ser mínima, no és en cap cas fàcil.
@@ -53,30 +48,38 @@ Quants patrons rítmics són adients per crear una peça com la música d'aplaud
 
 Podríem voler que cada patró en sí mateix no tingués repeticions, ja que causaria música idèntica cada desplaçament. Això descarta 76 d'aquests patrons. Dels 4020 restants només necessitem una versió desplaçada de cada un. Això ens divideix el nombre total per 12 i ens deixa amb només 335 patrons.
 
+\begin{wrapfigure}[14]{l}{0.33\textwidth}
+\centering
+\includegraphics[width=0.33\textwidth]{BeatBox_3}
+\end{wrapfigure}
+
 La majoría sonarien força avorrits, ja que hi hauria o bé massa o bé massa pocs aplaudiments. Si ho restringim a un mínim de 4 aplaudiments i un màxim de 8, ens deixa amb 287 possibilitats. Si encara ho volem restringir més, podem exigir que no hi hagi pauses consecutives. Això ens deixa amb només 11 patrons (mostrats a sota). El patró que va escollir Steve Reich (marcat en vermell) és un dels dos únics patrons que no repeteix el nombre d'aplaudiments entre dues pauses.
 
-\begin{figure}[h]
-\centering
-\includegraphics[width=0.4\textwidth]{BeatBox_4}
-\end{figure}
+% \begin{figure}[h]
+% \centering
+% \includegraphics[width=0.4\textwidth]{BeatBox_4}
+% \end{figure}
 
-%
-%[1,1,0,1,0,1,1,0,1,0,1,0]
-%[1,1,0,1,1,0,1,0,1,0,1,0]
-%[1,1,1,0,1,0,1,0,1,0,1,0]
-%[1,1,1,0,1,0,1,1,0,1,1,0]
-%[1,1,1,0,1,1,0,1,0,1,1,0]
-%[1,1,1,0,1,1,0,1,1,0,1,0]
-%[1,1,1,0,1,1,1,0,1,0,1,0]
-%[1,1,1,1,0,1,0,1,0,1,1,0]
-%[1,1,1,1,0,1,0,1,1,0,1,0]
-%[1,1,1,1,0,1,1,0,1,0,1,0]
-%[1,1,1,1,1,0,1,0,1,0,1,0]
-%
-
+\hfill \makebox[0.6\textwidth][c]{
+\ttfamily \bfseries
+\begin{tabular}{c}
+(1,1,0,1,0,1,1,0,1,0,1,0) \\
+(1,1,0,1,1,0,1,0,1,0,1,0) \\
+(1,1,1,0,1,0,1,0,1,0,1,0) \\
+(1,1,1,0,1,0,1,1,0,1,1,0) \\
+\color{red}(1,1,1,0,1,1,0,1,0,1,1,0)\color{black} \\
+(1,1,1,0,1,1,0,1,1,0,1,0) \\
+(1,1,1,0,1,1,1,0,1,0,1,0) \\
+(1,1,1,1,0,1,0,1,0,1,1,0) \\
+(1,1,1,1,0,1,0,1,1,0,1,0) \\
+(1,1,1,1,0,1,1,0,1,0,1,0) \\
+(1,1,1,1,1,0,1,0,1,0,1,0) \\
+\end{tabular}
+}
 \paragraph{El Mòdul:}
 Prova d'aplaudir! Comença a poc a poc i vés incrementant la velocitat. Selecciona diferents desplaçaments movent el punt verd al cercle.
 
+\vspace{12ex}
 
 \subsection{Seqüenciador}
 Has entrat mai a la sala d'impressió d'algun gran diari?
@@ -93,6 +96,7 @@ Quan la màquina està en repòs, el nombre de barres de cada disc es pot canvia
 \end{figure}
 
 En l'estat de repòs també pots clicar a les barres per canviar-ne l'estat entre els tres disponibles: fort, mitjà, apagat. Amb això pots crear una gran varietat de ritmes tan coneguts com totalment nous!
+
 
 \subsection{Ritmes de n sobre m}
 Estem molt acostumats a aplaudir ritmes regulars simples com un pas doble 1-2-1-2-1-2 o un vals en compàs de 3 1-2-3-1-2-3. Això és, potser, un dels primers exercicis que es fan quan es comença amb un instrument de percussió. Però les coses es tornen realment complicades quan volem aplaudir dos ritmes alhora. Combinar un ritme regular amb n pulsacions en un compàs amb un altre ritme amb m pulsacions per compàs alhora s'anomena ritme de n sobre m. La ràtio de velocitat entre els dos ritmes és n/m. La fotografia de sota il·lustra ritmes de 2 sobre 3. A cada compàs, la veu de dalt té dues notes perfectament distribuïdes i la de sota en té tres.
@@ -144,19 +148,23 @@ Com es distribueixen 3 cops de tambor en un compàs de 8 pulsacions? I quina rel
 \end{figure}
 
 \paragraph{Les Mates:}
-Aquest mètode de generació de ritmes té una propietat remarcable. Distribueix els 3 cops de la manera més equitativa possible entre les 8 pulsacions. La raó d'això és que el dibuix pixelat de la línia l'aproxima tan bé com pot. Una altra manera de pensar en aquest mètode de generació és considerant un triangle de costats iguals i després triar punts d'un octàgon amb el mateix centre que estiguin el més a prop possible dels costats del triangle. Clarament aquest mètode es pot generalitzar a qualsevol nombre de cops i pulsacions.
+Aquest mètode de generació de ritmes té una propietat remarcable. Distribueix els 3 cops de la manera més equitativa possible entre les 8 pulsacions. La raó d'això és que el dibuix pixelat de la línia l'aproxima tan bé com pot.
+\begin{wrapfigure}[13]{r}{0.4\textwidth}
+\centering
+\includegraphics[width=0.39\textwidth]{BeatBox_10}
+\end{wrapfigure}
+Una altra manera de pensar en aquest mètode de generació és considerant un triangle de costats iguals i després triar punts d'un octàgon amb el mateix centre que estiguin el més a prop possible dels costats del triangle. Clarament aquest mètode es pot generalitzar a qualsevol nombre de cops i pulsacions.
 
 \paragraph{La Música:} La distribució igual indicada en aquest mètode crea ritmes molt interessants. De fet, es poden trobar en un munt de cultures i estils. Des del folklore balcànic fins al Take Five de Dave Brubeck, passant pels ritmes  llatinoamericans i japonesos.
 
 \paragraph{El Mòdul:} En aquest mòdul pots crear els dos ritmes mencionats en paral·lel i variar els números que generen els ritmes. És una gran eina per crear i dur a terme patrons rítmics elaborats.
 
-\begin{figure}[h]
-\centering
-\includegraphics[width=0.4\textwidth]{BeatBox_10}
-\end{figure}
 
-\vfill
 
-Autor del mòdul: Jürgen Richter-Gebert, Technical University of Munich
-Motor de So: Patrick Wilson i Aaron Montag / basat en CindyJS.org
-Text: Jürgen Richter-Gebert (TU Munich)
+\begin{sectcredits}
+\item[Autor del mòdul:] Jürgen Richter-Gebert (Technical University of Munich).
+
+\item[Agraïments:] Patrick Wilson i Aaron Montag (sistema de so). Basat en CindyJS.org
+
+\item[Text:] Jürgen Richter-Gebert (TU Munich).
+\end{sectcredits}

@@ -39,19 +39,19 @@
 	\newpage%
     \@startsection
     {section}{1}{0pt}{-1.5ex plus -1ex minus -.2ex}%
-    {1ex plus .2ex}{\large\sffamily\bfseries\headlinecolor\MakeUppercase}%
+    {1ex plus .2ex}{\large\bfseries\headlinecolor\MakeUppercase}%
 }
 
 \renewcommand{\subsection}{%
     \@startsection
     {subsection}{2}{0pt}{-1.5ex plus -1ex minus -.2ex}%
-    {1ex plus .2ex}{\sffamily\bfseries\headlinecolor\MakeUppercase}%
+    {1ex plus .2ex}{\bfseries\headlinecolor\MakeUppercase}%
 }
 
 \renewcommand{\subsubsection}{%
     \@startsection
     {subsubsection}{3}{0pt}{-1.5ex plus -1ex minus -.2ex}%
-    {1ex plus .2ex}{\small\sffamily\bfseries\headlinecolor}%
+    {1ex plus .2ex}{\small\bfseries\headlinecolor}%
 }
 
 

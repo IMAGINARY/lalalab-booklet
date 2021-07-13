@@ -1,7 +1,14 @@
 \documentclass{lalabook}
 \usepackage[utf8]{inputenc}
+
+
 \usepackage{geometry}
-\geometry{a5paper}
+\geometry{a5paper, inner=15mm, outer=11mm, top=17mm, bottom=17mm}
+
+\setlength{\parindent}{0em}
+\setlength{\parskip}{1ex}
+
+
 \usepackage[hidelinks]{hyperref}
 
 \usepackage{epigraph}
@@ -18,21 +25,36 @@
 \usepackage{xcolor}
 \usepackage{normalcolor}
 
+\newenvironment{sectcredits}
+{\vspace{1cm} \vfill \footnotesize \begin{description}}
+{\end{description}}
 
+\usepackage{enumitem}
 
 \usepackage{tikz}
 
  \usepackage{fontspec}
- \setmainfont{Quicksand}
+ \setmainfont{Quicksand}[
+ ItalicFont = Montserrat Light Italic
+ ]
+ % Fonts that need to be installed in the system:
+ % Quicksand     https://fonts.google.com/specimen/Quicksand
+ % Montserrat     https://fonts.google.com/specimen/Montserrat
+ 
 
 \usepackage{fancyhdr}
 
 \pagestyle{fancy}
 \fancyhf{}
-\fancyhead[LE,RO]{\bfseries \small \rightmark}
+\fancyhead[LE,RO]{\bfseries \scriptsize \rightmark}
 \fancyfoot[LE,RO]{\bfseries \large \thepage}
 \renewcommand{\headrulewidth}{0pt}
 
+\fancypagestyle{notes}{%
+\fancyhf{}%
+\fancyhead[LE,RO]{\bfseries \scriptsize NOTES}
+\fancyfoot[LE,RO]{\bfseries \large \thepage}
+}
 
 \usepackage{tocloft}
 \renewcommand{\cftdot}{}
@@ -60,9 +82,8 @@
 \noindent
 \begin{tikzpicture}[remember picture, overlay]
  	\node[inner sep=0pt] at (current page.center) {\includegraphics[width=\paperwidth,height=\paperheight]{cover_blank}};
-	\node at (12.2,1.8) [anchor=east] {\color[rgb]{1,1,1} \Large \textbf{GUIA DE L'EXPOSICIÓ} };
-	\node at (4.2,-10.6) [anchor=west] { \Huge \bf LES MATEMÀTIQUES};
-	\node at (4.2,-11.6) [anchor=west] {\Huge \bf DE LA MÚSICA};
+	\node at (current page.north east) [anchor=north east, xshift=-6mm, yshift=-7mm, font=\Large\bfseries]{\color[rgb]{1,1,1}GUIA DE L'EXPOSICIÓ};
+	\node at (current page.north east)  [anchor=east, xshift=-6mm, yshift=-140.5mm, align=left, font=\Huge\bfseries]  {LES MATEMÀTIQUES \\ DE LA MÚSICA}; 
 \end{tikzpicture}
 
 
@@ -90,6 +111,11 @@
 \input{ShowMeMusic}
 \input{PentatonicScales}
 \input{SoundOfSequences}
+
+
+%\newpage \strut \pagestyle{notes} % Add pages to reach a multiple of 4, for booklet printing.
+%\newpage \strut
+
 
 \newpage
 \pagecolor[RGB]{239,7,115}

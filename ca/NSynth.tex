@@ -10,15 +10,27 @@ El NSynth és un sintetitzador que utilitza Intel·ligència Artificial per inte
 El dispositiu NSynth de l'exposició conté la Xarxa Neural entrenada i pot interpolar quatre sons seleccionats (utilitzant les quatre rodetes que incorpora). Tocant un punt al sensor tàctil quadrat, el sintetitzador ajusta els paràmetres per fer-los proporcionals a les coordenades del quadrat.  Els quatre sons originals s'associen a les cantonades, tota la resta de punts corresponen a sons nous.
 
 \begin{figure}[h]
-\centering
-\includegraphics[width=0.7\textwidth]{NSynth_1}
+\centering \small
+\begin{tikzpicture}
+\node at (0,0) { \includegraphics[width=0.7\textwidth]{NSynth_1_nolabels} };
+%\draw[step=1,gray,very thin] (-3,-3) grid (3,3);
+\node at (0.6,2.6) [align=center, anchor=south]
+    {Pantalla};
+\node at (-2.5,-0.4) [align=center, anchor=east]
+    {Selectors \\ d'instruments};
+\node at (2.9,-0.2) [align=center, anchor=west]
+    {Interfície \\ tàctil};
+\node at (0.5,-2.2) [align=center, anchor=north]
+    {Controls d'envolvent};
+\end{tikzpicture}
+\vspace{-2em}
 \end{figure}
 
-\paragraph{Selectors d'instrument} - Aquests instruments s'assignen a les cantonades de la interfície tàctil.
+\paragraph{Selectors d'instruments} - Aquests instruments s'assignen a les cantonades de la interfície tàctil.
 
 \paragraph{Pantalla} - Mostra l'estat de l'instrument i altra informació addicional sobre els controls amb què estàs interactuant.
 
-\paragraph{Controls d'envolupant} - S'utilitzen per personalitzar encara més la sortida que genera el dispositiu.
+\paragraph{Controls d'envolvent} - S'utilitzen per personalitzar encara més la sortida que genera el dispositiu.
 \begin{itemize}
 \item ``Posició'' fixa la posició inicial de l'ona. (Talla l'atac de la forma d'ona o comença des de la cua).
 \item ``Atac'' controla el temps que triga la pujada inicial des de zero fins al pic.
@@ -30,15 +42,21 @@ El dispositiu NSynth de l'exposició conté la Xarxa Neural entrenada i pot inte
 
 \paragraph{Interfície tàctil} - És un sensor capacitiu, com el panell tàctic que simula el ratolí en un ordinador portàtil, i s'utilitza per explorar el món de nous sons que el NSynth ha generat entre els sons font que has seleccionat.
 
-\vfill
+\begin{sectcredits}
 
-Autor del mòdul: NSynth és un sintetitzador de codi obert basat en Machine Learning desenvolupat pel projecte Googe Magenta. NSynth Super és una interfície de hardware obert desenvolupada pel Google Creative Lab.
-Text: Daniel Ramos (IMAGINARY).
+\item[Autor del mòdul:] NSynth és un sintetitzador de codi obert basat en Machine Learning desenvolupat pel projecte Googe Magenta. NSynth Super és una interfície de hardware obert desenvolupada pel Google Creative Lab.
 
-Referències
+\item[Text:] Daniel Ramos (IMAGINARY).
 
-NSynth: Neural Audio Synthesis. Website at Google's magenta project. \url{www.magenta.tensorflow.org/nsynth}.
+\item[Referències:] \strut
+\noindent \begin{itemize}[leftmargin=*]
 
-Jesse Engel, Cinjon Resnick, Adam Roberts, Sander Dieleman, Douglas Eck, Karen Simonyan, and Mohammad Norouzi. Neural Audio Synthesis of Musical Notes with WaveNet Autoencoders. \url{www.arxiv.org/abs/1704.01279}, (2017).
+\item \emph{NSynth: Neural Audio Synthesis}. Website at Google's magenta project. \\
+\url{www.magenta.tensorflow.org/nsynth}.
 
-NSynth Super: An experimental physical interface for the NSynth algorithm. Website at Google's Creative Lab. \url{www.nsynthsuper.withgoogle.com}.
+\item Jesse Engel, Cinjon Resnick, Adam Roberts, Sander Dieleman, Douglas Eck, Karen Simonyan, and Mohammad Norouzi. \emph{Neural Audio Synthesis of Musical Notes with WaveNet Autoencoders.} \\
+\url{www.arxiv.org/abs/1704.01279}, (2017).
+
+\item \emph{NSynth Super: An experimental physical interface for the NSynth algorithm.} Website at Google's Creative Lab.\\ \url{www.nsynthsuper.withgoogle.com}.
+\end{itemize}
+\end{sectcredits}
